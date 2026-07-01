@@ -151,6 +151,54 @@
     </div>
   </section>
 
+  <!-- ================= THE INDEX IS THE LEAK ================= -->
+  <section style="position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:clamp(40px,6vw,72px) 32px">
+    <div style="max-width:1080px;margin:0 auto 40px">
+      <div data-reveal style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.26em;text-transform:uppercase;color:#FF5C5C;margin-bottom:22px">The&nbsp;hidden&nbsp;leak</div>
+      <h2 data-reveal style="font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(28px,4.6vw,48px);line-height:1.07;letter-spacing:-0.02em;margin:0 0 22px;color:#fff;max-width:20ch">Keeping the file local isn't enough. <span style="color:#FF5C5C">The index is the leak.</span></h2>
+      <p data-reveal style="font-size:clamp(17px,2.2vw,21px);line-height:1.6;color:#8B96AD;margin:0;max-width:62ch">Most "on-prem-friendly" AI still ships an index to the cloud. But an index derived from your document is a <span style="color:#EAF0FF">second copy of it</span> — queryable, correlatable, and often reversible. The original never moved; the sensitive information did.</p>
+    </div>
+
+    <!-- flow -->
+    <div data-reveal style="display:flex;flex-wrap:wrap;align-items:center;gap:12px 14px;margin-bottom:40px;font-family:'JetBrains Mono',monospace;font-size:13px">
+      <span style="color:#27FDFC;border:1px solid rgba(39,253,252,0.35);border-radius:7px;padding:9px 14px">local&nbsp;document</span>
+      <span style="color:#5C6579">→</span>
+      <span style="color:#AEB8CC;border:1px solid rgba(255,255,255,0.14);border-radius:7px;padding:9px 14px">content&nbsp;extraction</span>
+      <span style="color:#FF5C5C">→</span>
+      <span style="color:#FF5C5C;border:1px solid rgba(255,92,92,0.45);border-radius:7px;padding:9px 14px;background:rgba(255,92,92,0.06)">cloud&nbsp;index&nbsp;·&nbsp;outside&nbsp;your&nbsp;boundary</span>
+    </div>
+
+    <!-- derived-data grid -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-bottom:40px">
+      <div data-reveal style="border:1px solid rgba(255,255,255,0.09);border-radius:13px;padding:24px 22px;background:rgba(255,255,255,0.015)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#FF5C5C;margin-bottom:12px">KEYWORDS</div>
+        <p style="font-size:14.5px;line-height:1.55;color:#8B96AD;margin:0">Topics, names, projects, clients, and legal matters — right there in plaintext.</p>
+      </div>
+      <div data-reveal style="border:1px solid rgba(255,255,255,0.09);border-radius:13px;padding:24px 22px;background:rgba(255,255,255,0.015)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#FF5C5C;margin-bottom:12px">CHUNKS</div>
+        <p style="font-size:14.5px;line-height:1.55;color:#8B96AD;margin:0">Verbatim passages copied straight out of the file. Not derived — the content itself.</p>
+      </div>
+      <div data-reveal style="border:1px solid rgba(255,255,255,0.09);border-radius:13px;padding:24px 22px;background:rgba(255,255,255,0.015)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#FF5C5C;margin-bottom:12px">EMBEDDINGS</div>
+        <p style="font-size:14.5px;line-height:1.55;color:#8B96AD;margin:0">Encode the meaning — and are reversible enough to <span style="color:#C7D0E2">reconstruct the source text</span>.</p>
+      </div>
+      <div data-reveal style="border:1px solid rgba(255,255,255,0.09);border-radius:13px;padding:24px 22px;background:rgba(255,255,255,0.015)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#FF5C5C;margin-bottom:12px">METADATA</div>
+        <p style="font-size:14.5px;line-height:1.55;color:#8B96AD;margin:0">Filenames, authors, dates, case IDs, and paths — a map of what you hold.</p>
+      </div>
+      <div data-reveal style="border:1px solid rgba(255,255,255,0.09);border-radius:13px;padding:24px 22px;background:rgba(255,255,255,0.015)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#FF5C5C;margin-bottom:12px">RELATIONSHIPS</div>
+        <p style="font-size:14.5px;line-height:1.55;color:#8B96AD;margin:0">Which people, entities, and documents connect — disclosure without a single sentence.</p>
+      </div>
+    </div>
+
+    <!-- clean statement -->
+    <div data-reveal style="position:relative;border-left:2px solid #27FDFC;padding:22px 0 22px 26px;max-width:70ch">
+      <span aria-hidden="true" style="position:absolute;top:14px;left:-9px;font-family:'JetBrains Mono',monospace;color:#27FDFC;font-size:14px;background:#05070E;padding:2px 0">◆</span>
+      <p style="font-family:'Sora',sans-serif;font-weight:500;font-size:clamp(17px,2.2vw,22px);line-height:1.4;color:#EAF0FF;margin:0">A cloud index of local content is <span style="color:#27FDFC">exfiltration</span> the moment it holds enough derived information to disclose, infer, search, or reconstruct protected content outside your walls. DPLYD keeps the index on the same side of the boundary as the data.</p>
+    </div>
+  </section>
+
   <!-- ================= SOLUTION ================= -->
   <section style="position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:clamp(48px,7vw,88px) 32px">
     <div style="max-width:1080px;margin:0 auto 52px">
@@ -174,6 +222,25 @@
         <h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:20px;color:#fff;margin:0 0 10px">Predictable economics</h3>
         <p style="font-size:15px;line-height:1.6;color:#8B96AD;margin:0">Fixed monthly. Zero per-token metering. Zero capex.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- ================= PRODUCT PREVIEW ================= -->
+  <section style="position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:clamp(20px,3vw,40px) 32px clamp(48px,7vw,80px)">
+    <div data-reveal style="text-align:center;max-width:640px;margin:0 auto 34px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.26em;text-transform:uppercase;color:#27FDFC;margin-bottom:18px">Inside&nbsp;the&nbsp;appliance</div>
+      <h2 style="font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(26px,4vw,40px);line-height:1.08;letter-spacing:-0.02em;margin:0 0 14px;color:#fff">A workspace your team already knows how to use.</h2>
+      <p style="font-size:clamp(15px,2vw,18px);line-height:1.6;color:#8B96AD;margin:0">Skills, tools, and knowledge-base search — running entirely on your own hardware.</p>
+    </div>
+    <div data-reveal style="position:relative;border:1px solid rgba(39,253,252,0.28);border-radius:16px;overflow:hidden;background:#080B15;box-shadow:0 30px 80px rgba(0,0,0,0.5), 0 0 60px rgba(39,253,252,0.08)">
+      <!-- window chrome -->
+      <div style="display:flex;align-items:center;gap:8px;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,0.07);background:rgba(255,255,255,0.02)">
+        <span style="width:11px;height:11px;border-radius:50%;background:#FF5C5C;opacity:0.7"></span>
+        <span style="width:11px;height:11px;border-radius:50%;background:#FFE94A;opacity:0.7"></span>
+        <span style="width:11px;height:11px;border-radius:50%;background:#27FDFC;opacity:0.7"></span>
+        <span style="margin-left:12px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;color:#5C6579">dplyd&nbsp;·&nbsp;secure&nbsp;ai&nbsp;workspace</span>
+      </div>
+      <img src="assets/product-screenshot.png" alt="DPLYD AI secure workspace interface" loading="lazy" style="display:block;width:100%;height:auto">
     </div>
   </section>
 
@@ -375,12 +442,11 @@
       </div>
       <!-- trust badge strip -->
       <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;padding:20px 0;border-top:1px solid rgba(255,255,255,0.07);border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:24px">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.16em;color:#5C6579">COMPLIANCE</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.16em;color:#5C6579">BUILT&nbsp;TO&nbsp;THE&nbsp;STANDARD&nbsp;OF</span>
         <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#AEB8CC;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:6px 12px">CMMC L2</span>
         <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#AEB8CC;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:6px 12px">HIPAA</span>
         <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#AEB8CC;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:6px 12px">FERPA</span>
         <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#AEB8CC;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:6px 12px">SOC 2</span>
-        <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#3A4152">placeholder badges</span>
       </div>
       <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center">
         <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5C6579">© 2026 DPLYD AI</span>
