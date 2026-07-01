@@ -328,24 +328,19 @@
       <!-- calendar -->
       <div data-reveal style="border:1px solid rgba(39,253,252,0.28);border-radius:16px;padding:34px 30px;background:linear-gradient(160deg, rgba(39,253,252,0.06), transparent);display:flex;flex-direction:column">
         <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.2em;color:#27FDFC;margin-bottom:20px">▸ BOOK A DEMO</div>
-        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.9;color:#5C6579;border:1px dashed rgba(39,253,252,0.3);border-radius:10px;padding:20px;text-align:center;margin-bottom:22px">
-          <div style="color:#AEB8CC;margin-bottom:6px">[ scheduling calendar ]</div>
-          ┌───┬───┬───┬───┬───┐<br>│ M │ T │ W │ T │ F │<br>└───┴───┴───┴───┴───┘<br>
-          <span style="color:#3A4152">embed your calendar here</span>
-        </div>
+        <div id="cal-inline" style="height:560px;flex:none;overflow:auto;border:1px solid rgba(39,253,252,0.3);border-radius:10px;background:#05070E;margin-bottom:22px"></div>
         <h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:20px;color:#fff;margin:0 0 8px">See it on your own data.</h3>
         <p style="font-size:15px;line-height:1.55;color:#8B96AD;margin:0 0 22px">A 30-minute walkthrough of the appliance, Lighthouse, and Sentinel.</p>
-        <a id="calendarBtn" href="#book" data-placeholder="true" style="margin-top:auto;display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;letter-spacing:0.05em;color:#05070E;background:#27FDFC;padding:15px 24px;border-radius:9px;transition:transform .15s ease, box-shadow .25s ease" style-hover="transform:translateY(-2px);box-shadow:0 10px 34px rgba(39,253,252,0.4)">Open scheduling calendar →</a>
-        <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;color:#3A4152;margin-top:12px;text-align:center">↑ replace href with your calendar link</span>
+        <a id="calendarBtn" href="https://cal.com/kdplyd/30min" target="_blank" rel="noopener" style="margin-top:auto;display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;letter-spacing:0.05em;color:#05070E;background:#27FDFC;padding:15px 24px;border-radius:9px;transition:transform .15s ease, box-shadow .25s ease" style-hover="transform:translateY(-2px);box-shadow:0 10px 34px rgba(39,253,252,0.4)">Open scheduling calendar →</a>
       </div>
       <!-- contact form -->
-      <div id="contact" data-reveal style="scroll-margin-top:90px;border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:34px 30px;background:rgba(255,255,255,0.015)">
+      <div id="contact" data-reveal style="scroll-margin-top:90px;display:flex;flex-direction:column;border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:34px 30px;background:rgba(255,255,255,0.015)">
         <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.2em;color:#AEB8CC;margin-bottom:20px">▸ CONTACT SALES</div>
-        <form id="leadForm" novalidate style="display:flex;flex-direction:column;gap:14px">
+        <form id="leadForm" novalidate style="flex:1;display:flex;flex-direction:column;gap:14px">
           <label style="display:flex;flex-direction:column;gap:7px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;color:#8B96AD">NAME</span><input id="cf-name" type="text" required autocomplete="name" style="background:#080B15;border:1px solid rgba(255,255,255,0.14);border-radius:8px;padding:13px 14px;color:#EAF0FF;font-family:'Hanken Grotesk',sans-serif;font-size:15px;outline:none;transition:border-color .2s" style-focus="border-color:#27FDFC"></label>
           <label style="display:flex;flex-direction:column;gap:7px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;color:#8B96AD">WORK EMAIL</span><input id="cf-email" type="email" required autocomplete="email" style="background:#080B15;border:1px solid rgba(255,255,255,0.14);border-radius:8px;padding:13px 14px;color:#EAF0FF;font-family:'Hanken Grotesk',sans-serif;font-size:15px;outline:none;transition:border-color .2s" style-focus="border-color:#27FDFC"></label>
           <label style="display:flex;flex-direction:column;gap:7px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;color:#8B96AD">COMPANY</span><input id="cf-company" type="text" autocomplete="organization" style="background:#080B15;border:1px solid rgba(255,255,255,0.14);border-radius:8px;padding:13px 14px;color:#EAF0FF;font-family:'Hanken Grotesk',sans-serif;font-size:15px;outline:none;transition:border-color .2s" style-focus="border-color:#27FDFC"></label>
-          <label style="display:flex;flex-direction:column;gap:7px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;color:#8B96AD">TELL US ABOUT YOUR NEED</span><textarea id="cf-need" rows="3" style="background:#080B15;border:1px solid rgba(255,255,255,0.14);border-radius:8px;padding:13px 14px;color:#EAF0FF;font-family:'Hanken Grotesk',sans-serif;font-size:15px;outline:none;resize:vertical;transition:border-color .2s" style-focus="border-color:#27FDFC"></textarea></label>
+          <label style="flex:1;display:flex;flex-direction:column;gap:7px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;color:#8B96AD">TELL US ABOUT YOUR NEED</span><textarea id="cf-need" rows="3" style="flex:1;min-height:120px;background:#080B15;border:1px solid rgba(255,255,255,0.14);border-radius:8px;padding:13px 14px;color:#EAF0FF;font-family:'Hanken Grotesk',sans-serif;font-size:15px;outline:none;resize:vertical;transition:border-color .2s" style-focus="border-color:#27FDFC"></textarea></label>
           <button type="submit" style="margin-top:4px;display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;letter-spacing:0.05em;color:#EAF0FF;background:transparent;border:1px solid #27FDFC;padding:15px 24px;border-radius:9px;cursor:pointer;transition:background .2s ease, color .2s ease" style-hover="background:#27FDFC;color:#05070E">Send message →</button>
           <span id="formNote" style="display:none;font-family:'JetBrains Mono',monospace;font-size:12px;color:#27FDFC;text-align:center">Opening your email client…</span>
         </form>
@@ -374,7 +369,7 @@
             <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#5C6579">COMPANY</span>
             <a href="#book" style="font-size:14px;color:#AEB8CC;transition:color .2s" style-hover="color:#27FDFC">Book a Demo</a>
             <a href="#contact" style="font-size:14px;color:#AEB8CC;transition:color .2s" style-hover="color:#27FDFC">Contact Sales</a>
-            <a href="mailto:jessica@dplyd.io" style="font-size:14px;color:#AEB8CC;transition:color .2s" style-hover="color:#27FDFC">jessica@dplyd.io</a>
+            <a href="mailto:info@dplyd.io" style="font-size:14px;color:#AEB8CC;transition:color .2s" style-hover="color:#27FDFC">info@dplyd.io</a>
           </div>
         </div>
       </div>
@@ -392,7 +387,7 @@
         <div style="display:flex;gap:24px">
           <a href="#security" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5C6579;transition:color .2s" style-hover="color:#AEB8CC">Security</a>
           <a href="#" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5C6579;transition:color .2s" style-hover="color:#AEB8CC">Privacy</a>
-          <a href="mailto:jessica@dplyd.io" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5C6579;transition:color .2s" style-hover="color:#AEB8CC">Contact</a>
+          <a href="mailto:info@dplyd.io" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5C6579;transition:color .2s" style-hover="color:#AEB8CC">Contact</a>
         </div>
       </div>
     </div>
@@ -429,6 +424,18 @@ class Component extends DCLogic {
         io.observe(el);
       }
     });
+
+    // ---- cal.com inline embed ----
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    if (q('#cal-inline')) {
+      Cal("init", "30min", { origin: "https://cal.com" });
+      Cal.ns["30min"]("inline", {
+        elementOrSelector: "#cal-inline",
+        config: { layout: "month_view" },
+        calLink: "kdplyd/30min",
+      });
+      Cal.ns["30min"]("ui", { hideEventTypeDetails: false, layout: "month_view", theme: "dark", cssVarsPerTheme: { dark: { "cal-brand": "#27FDFC" } } });
+    }
 
     // ---- header scrolled state ----
     const header = q('#siteHeader');
@@ -488,7 +495,7 @@ class Component extends DCLogic {
         const body = 'Name: ' + name + '\nWork email: ' + email + '\nCompany: ' + (company || '—') + '\n\nWhat they need:\n' + (need || '—');
         const subject = 'DPLYD AI enquiry — ' + (company || name);
         if (note) { note.style.display = 'block'; }
-        window.location.href = 'mailto:jessica@dplyd.io?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        window.location.href = 'mailto:kendall@dplyd.io?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
       });
     }
   }
