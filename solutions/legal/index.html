@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>On-Prem Legal AI That Keeps Privilege Inside Your Firm | DPLYD</title>
+<meta name="description" content="DPLYD is a managed AI appliance inside your law firm's perimeter. Privileged files and the index stay home. Fixed monthly, no per-seat. Built to SOC 2 / HIPAA / CMMC L2 standards.">
+<link rel="canonical" href="https://dplyd.io/solutions/legal/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DPLYD">
+<meta property="og:title" content="On-Prem Legal AI That Keeps Privilege Inside Your Firm | DPLYD">
+<meta property="og:description" content="A managed AI appliance inside your firm's perimeter. Privileged material stays privileged — the file and the index never leave.">
+<meta property="og:url" content="https://dplyd.io/solutions/legal/">
+<meta property="og:image" content="https://dplyd.io/assets/dplyd-logo.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="On-Prem Legal AI That Keeps Privilege Inside Your Firm | DPLYD">
+<meta name="twitter:description" content="A managed AI appliance inside your firm's perimeter. Privileged material stays privileged — the file and the index never leave.">
+<meta name="twitter:image" content="https://dplyd.io/assets/dplyd-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #05070E; color: #EAF0FF; font-family: 'Hanken Grotesk', system-ui, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  ::selection { background: #27FDFC; color: #05070E; }
+  a { text-decoration: none; }
+  table { border-collapse: collapse; }
+  @keyframes waveDrift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes waveDriftRev { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+  @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+  @keyframes floaty2 { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-11px); } }
+  @keyframes pulseDot { 0%,100% { opacity: 1; box-shadow: 0 0 0 0 rgba(39,253,252,0.5); } 50% { opacity: .7; box-shadow: 0 0 0 8px rgba(39,253,252,0); } }
+  @keyframes glowPulse { 0%,100% { opacity: .35; } 50% { opacity: .7; } }
+  @keyframes gridPan { from { background-position: 0 0; } to { background-position: 44px 44px; } }
+
+  .navlink { transition: color .2s; }
+  .navlink:hover { color: #27FDFC; }
+  .btn-primary { transition: transform .15s ease, box-shadow .25s ease; }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(39,253,252,0.4); }
+  .btn-ghost { transition: border-color .2s ease, color .2s ease; }
+  .btn-ghost:hover { border-color: #27FDFC; color: #27FDFC; }
+  .card-hover { transition: border-color .25s ease, transform .25s ease; }
+  .card-hover:hover { border-color: rgba(39,253,252,0.4); transform: translateY(-4px); }
+  .foot-link { transition: color .2s; }
+  .foot-link:hover { color: #27FDFC; }
+  .foot-link-sub:hover { color: #AEB8CC; }
+  [data-reveal] { transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .cmp-table th, .cmp-table td { padding: 16px 20px; text-align: left; font-size: 14.5px; line-height: 1.5; vertical-align: top; }
+  .cmp-table th { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #5C6579; border-bottom: 1px solid rgba(255,255,255,0.09); }
+  .cmp-table td { border-bottom: 1px solid rgba(255,255,255,0.06); color: #AEB8CC; }
+  .cmp-table tr:last-child td { border-bottom: none; }
+  .cmp-row-label { font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: #8B96AD; white-space: nowrap; }
+  .cmp-cloud { color: #B08585; }
+  .cmp-dplyd { color: #EAF0FF; background: rgba(39,253,252,0.045); }
+  @media (max-width: 820px) {
+    #desknav { display: none !important; }
+    #navToggle { display: flex !important; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- ambient background -->
+  <div aria-hidden="true" style="position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(39,253,252,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(39,253,252,0.035) 1px, transparent 1px);background-size:44px 44px;animation:gridPan 32s linear infinite;mask-image:radial-gradient(120% 80% at 50% 0%, #000 20%, transparent 75%);-webkit-mask-image:radial-gradient(120% 80% at 50% 0%, #000 20%, transparent 75%)"></div>
+  <div aria-hidden="true" style="position:fixed;top:-260px;left:50%;transform:translateX(-50%);width:900px;height:600px;z-index:0;pointer-events:none;background:radial-gradient(closest-side, rgba(39,253,252,0.14), transparent);filter:blur(30px);animation:glowPulse 9s ease-in-out infinite"></div>
+
+  <!-- ================= HEADER ================= -->
+  <header id="siteHeader" style="position:sticky;top:0;z-index:100;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);background:rgba(5,7,14,0.55);border-bottom:1px solid rgba(255,255,255,0.07)">
+    <div style="max-width:1280px;margin:0 auto;padding:15px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <a href="../../" aria-label="DPLYD AI home" style="display:flex;align-items:center;flex-shrink:0"><img src="../../assets/dplyd-logo.png" alt="DPLYD AI" style="height:28px;display:block"></a>
+      <nav id="desknav" style="display:flex;align-items:center;gap:34px">
+        <a href="../../#platform" class="navlink" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:0.08em;color:#AEB8CC">Platform</a>
+        <a href="../../#verticals" class="navlink" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:0.08em;color:#AEB8CC">Verticals</a>
+        <a href="../../#security" class="navlink" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:0.08em;color:#AEB8CC">Security</a>
+        <a href="../legal/" class="navlink" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:0.08em;color:#27FDFC">Legal</a>
+        <a href="../healthcare/" class="navlink" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:0.08em;color:#AEB8CC">Healthcare</a>
+        <a href="#book" class="btn-primary" style="font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;letter-spacing:0.06em;color:#05070E;background:#27FDFC;padding:11px 20px;border-radius:8px;box-shadow:0 0 0 rgba(39,253,252,0)">Book a Demo</a>
+      </nav>
+      <button id="navToggle" aria-label="Menu" aria-expanded="false" style="display:none;align-items:center;justify-content:center;width:42px;height:42px;background:transparent;border:1px solid rgba(255,255,255,0.16);border-radius:8px;color:#EAF0FF;font-family:'JetBrains Mono',monospace;font-size:20px;cursor:pointer">≡</button>
+    </div>
+    <div id="mobnav" style="display:none;padding:8px 32px 22px;border-top:1px solid rgba(255,255,255,0.06);background:rgba(5,7,14,0.96)">
+      <a href="../../#platform" style="display:block;padding:13px 0;font-family:'JetBrains Mono',monospace;font-size:15px;color:#AEB8CC;border-bottom:1px solid rgba(255,255,255,0.05)">Platform</a>
+      <a href="../../#verticals" style="display:block;padding:13px 0;font-family:'JetBrains Mono',monospace;font-size:15px;color:#AEB8CC;border-bottom:1px solid rgba(255,255,255,0.05)">Verticals</a>
+      <a href="../../#security" style="display:block;padding:13px 0;font-family:'JetBrains Mono',monospace;font-size:15px;color:#AEB8CC;border-bottom:1px solid rgba(255,255,255,0.05)">Security</a>
+      <a href="../legal/" style="display:block;padding:13px 0;font-family:'JetBrains Mono',monospace;font-size:15px;color:#27FDFC;border-bottom:1px solid rgba(255,255,255,0.05)">Legal</a>
+      <a href="../healthcare/" style="display:block;padding:13px 0;font-family:'JetBrains Mono',monospace;font-size:15px;color:#AEB8CC;border-bottom:1px solid rgba(255,255,255,0.05)">Healthcare</a>
+      <a href="#book" style="display:block;text-align:center;margin-top:16px;padding:13px 0;font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;letter-spacing:0.06em;color:#05070E;background:#27FDFC;border-radius:8px">Book a Demo</a>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section style="position:relative;z-index:1;background:linear-gradient(180deg, rgba(39,253,252,0.05), transparent 65%)">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,110px) 32px clamp(40px,6vw,64px)">
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(40px,5vw,72px);align-items:center">
+        <!-- left copy -->
+        <div style="flex:1 1 420px;min-width:min(100%,420px)">
+          <div style="display:inline-flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.26em;text-transform:uppercase;color:#27FDFC;border:1px solid rgba(39,253,252,0.28);border-radius:999px;padding:7px 14px;margin-bottom:26px">
+            <span style="width:7px;height:7px;border-radius:50%;background:#27FDFC;animation:pulseDot 2.6s ease-in-out infinite"></span>Legal&nbsp;AI&nbsp;Appliance
+          </div>
+          <h1 style="font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(36px,5.6vw,62px);line-height:1.05;letter-spacing:-0.025em;margin:0 0 22px;color:#fff">AI for lawyers, without sending privilege to <span style="color:#27FDFC">the cloud.</span></h1>
+          <p style="font-family:'Sora',sans-serif;font-weight:400;font-size:clamp(18px,2.4vw,23px);line-height:1.4;color:#C7D0E2;margin:0 0 18px;max-width:36ch">The productivity of generative AI — for matters, memos, and client files that never leave your building.</p>
+          <p style="font-size:16px;line-height:1.65;color:#8B96AD;margin:0 0 34px;max-width:50ch">DPLYD puts a fully managed AI appliance inside your firm's perimeter. Privileged material stays privileged. No third-party API sees your work product.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:14px">
+            <a href="#book" class="btn-primary" style="display:inline-flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;letter-spacing:0.05em;color:#05070E;background:#27FDFC;padding:15px 26px;border-radius:9px;box-shadow:0 0 30px rgba(39,253,252,0.22)">Book a Demo <span style="font-size:15px">→</span></a>
+            <a href="../../#contact" class="btn-ghost" style="display:inline-flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:500;letter-spacing:0.05em;color:#EAF0FF;background:transparent;border:1px solid rgba(255,255,255,0.2);padding:15px 26px;border-radius:9px">Talk to Sales</a>
+          </div>
+        </div>
+
+        <!-- right: waterline diagram, legal-flavored -->
+        <div style="flex:1 1 400px;min-width:min(100%,360px)">
+          <div style="position:relative;border:1px solid rgba(255,255,255,0.1);border-radius:18px;overflow:hidden;background:linear-gradient(180deg, rgba(255,92,92,0.06) 0%, rgba(5,7,14,0) 40%, rgba(39,253,252,0.07) 100%);padding:22px 22px 24px">
+            <span aria-hidden="true" style="position:absolute;top:9px;left:11px;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.25);font-size:14px">┌</span>
+            <span aria-hidden="true" style="position:absolute;top:9px;right:11px;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.25);font-size:14px">┐</span>
+            <span aria-hidden="true" style="position:absolute;bottom:9px;left:11px;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.25);font-size:14px">└</span>
+            <span aria-hidden="true" style="position:absolute;bottom:9px;right:11px;font-family:'JetBrains Mono',monospace;color:rgba(255,255,255,0.25);font-size:14px">┘</span>
+
+            <!-- above -->
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+              <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.2em;color:#FF5C5C">▲ ABOVE&nbsp;·&nbsp;THE&nbsp;CLOUD</span>
+              <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.14em;color:rgba(255,92,92,0.55)">third-party&nbsp;API</span>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;opacity:0.85">
+              <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(255,180,180,0.85);border:1px dashed rgba(255,92,92,0.4);border-radius:6px;padding:6px 10px;animation:floaty 6s ease-in-out infinite">◇ frontier&nbsp;LLM</span>
+              <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(255,180,180,0.85);border:1px dashed rgba(255,92,92,0.4);border-radius:6px;padding:6px 10px;animation:floaty2 7s ease-in-out infinite 0.6s">◇ public&nbsp;cloud</span>
+              <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(255,180,180,0.85);border:1px dashed rgba(255,92,92,0.4);border-radius:6px;padding:6px 10px;animation:floaty 6.5s ease-in-out infinite 0.3s">◇ shared&nbsp;tenancy</span>
+            </div>
+
+            <!-- waterline -->
+            <div style="position:relative;overflow:hidden;height:30px;border-top:1px solid rgba(39,253,252,0.25);border-bottom:1px solid rgba(39,253,252,0.25);margin-bottom:6px">
+              <div style="display:flex;width:200%;animation:waveDrift 18s linear infinite;font-family:'JetBrains Mono',monospace;font-size:17px;line-height:30px;color:rgba(39,253,252,0.55);white-space:nowrap">
+                <span>≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿</span><span>≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿</span>
+              </div>
+              <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:0.28em;color:#27FDFC;background:#080B15;padding:2px 10px;border-radius:4px">WATERLINE</span>
+            </div>
+            <div style="text-align:center;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.14em;color:#3E7A88;margin-bottom:16px">↑ your&nbsp;firm's&nbsp;boundary&nbsp;↑</div>
+
+            <!-- below: appliance -->
+            <div style="border:1px solid rgba(39,253,252,0.4);border-radius:12px;background:rgba(39,253,252,0.05);padding:16px;box-shadow:0 0 40px rgba(39,253,252,0.08) inset">
+              <div style="display:flex;align-items:center;gap:11px;margin-bottom:14px">
+                <span style="width:11px;height:11px;border-radius:50%;background:#27FDFC;animation:pulseDot 2.4s ease-in-out infinite;flex-shrink:0"></span>
+                <span style="font-family:'Sora',sans-serif;font-weight:600;font-size:15px;color:#fff;letter-spacing:0.01em">DPLYD Appliance</span>
+                <span style="margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.12em;color:#27FDFC;border:1px solid rgba(39,253,252,0.3);border-radius:5px;padding:3px 8px">ON-PREM</span>
+              </div>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.18em;color:#5C6579;margin-bottom:9px">▾ YOUR MATTERS — STAY HOME</div>
+              <div style="display:flex;flex-wrap:wrap;gap:7px">
+                <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#27FDFC;border:1px solid rgba(39,253,252,0.35);border-radius:5px;padding:5px 9px">privileged</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#27FDFC;border:1px solid rgba(39,253,252,0.35);border-radius:5px;padding:5px 9px">work&nbsp;product</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#27FDFC;border:1px solid rgba(39,253,252,0.35);border-radius:5px;padding:5px 9px">client&nbsp;files</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#27FDFC;border:1px solid rgba(39,253,252,0.35);border-radius:5px;padding:5px 9px">matter&nbsp;data</span>
+              </div>
+            </div>
+            <p style="text-align:center;font-family:'Sora',sans-serif;font-style:italic;font-size:13.5px;color:#C7D0E2;margin:16px 4px 2px">"What's beneath the waterline is your business."</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- subhead strip -->
+      <div style="margin-top:clamp(44px,6vw,68px);display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;padding-top:26px;border-top:1px solid rgba(255,255,255,0.07)">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.2em;color:#5C6579">BUILT&nbsp;TO&nbsp;THE&nbsp;STANDARD&nbsp;OF</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;color:#AEB8CC"><span style="color:#27FDFC">◆</span> SOC&nbsp;2</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;color:#AEB8CC"><span style="color:#27FDFC">◆</span> HIPAA</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;color:#AEB8CC"><span style="color:#27FDFC">◆</span> CMMC&nbsp;L2</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.1em;color:#3A4152">certifications&nbsp;in&nbsp;progress</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- divider -->
+  <div aria-hidden="true" style="position:relative;z-index:1;overflow:hidden;height:26px;opacity:0.4"><div style="display:flex;width:200%;animation:waveDriftRev 26s linear infinite;font-family:'JetBrains Mono',monospace;font-size:15px;line-height:26px;color:#27FDFC;white-space:nowrap"><span>·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~</span><span>·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~</span></div></div>
+
+  <!-- ================= THE TRADE ================= -->
+  <section style="position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:clamp(64px,9vw,110px) 32px">
+    <div data-reveal style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.26em;text-transform:uppercase;color:#FF5C5C;margin-bottom:22px">The&nbsp;Trade</div>
+    <h2 data-reveal style="font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(30px,5vw,52px);line-height:1.06;letter-spacing:-0.02em;margin:0 0 28px;color:#fff;max-width:22ch">The trade you've been asked to make.</h2>
+    <p data-reveal style="font-size:clamp(17px,2.2vw,21px);line-height:1.6;color:#8B96AD;margin:0 0 24px;max-width:64ch">Every cloud AI tool asks your firm to ship its most sensitive information — privileged communications, deal documents, client PHI, litigation strategy — to someone else's servers to get an answer back.</p>
+    <p data-reveal style="font-size:16px;line-height:1.65;color:#8B96AD;margin:0 0 40px;max-width:64ch">For a law firm, that's not a convenience question. It's a duty question. Model Rule 1.6, client outside-counsel guidelines, and the privilege itself all point the same direction: the file shouldn't leave.</p>
+    <div data-reveal style="position:relative;border-left:2px solid #27FDFC;padding:20px 0 20px 26px;max-width:60ch">
+      <span aria-hidden="true" style="position:absolute;top:12px;left:-9px;font-family:'JetBrains Mono',monospace;color:#27FDFC;font-size:14px;background:#05070E;padding:2px 0">◆</span>
+      <p style="font-family:'Sora',sans-serif;font-weight:500;font-size:clamp(18px,2.4vw,24px);line-height:1.35;color:#EAF0FF;margin:0">You built your security architecture to keep it home. That instinct was right. <span style="color:#27FDFC">AI shouldn't be the exception that undoes it.</span></p>
+    </div>
+  </section>
+
+  <!-- ================= THE INDEX IS THE LEAK ================= -->
+  <section style="position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:clamp(40px,6vw,72px) 32px">
+    <div style="max-width:1080px;margin:0 auto 40px">
+      <div data-reveal style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.26em;text-transform:uppercase;color:#FF5C5C;margin-bottom:22px">The&nbsp;part&nbsp;nobody&nbsp;tells&nbsp;you</div>
+      <h2 data-reveal style="font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(28px,4.6vw,48px);line-height:1.07;letter-spacing:-0.02em;margin:0 0 22px;color:#fff;max-width:22ch">Keeping the file local isn't enough. <span style="color:#FF5C5C">The index is the leak.</span></h2>
+      <p data-reveal style="font-size:clamp(17px,2.2vw,21px);line-height:1.6;color:#8B96AD;margin:0 0 16px;max-width:66ch">Most "on-prem-friendly" legal AI keeps the <em>document</em> local — then ships an <em>index</em> of it to the cloud. That distinction is marketing, not security.</p>
+      <p data-reveal style="font-size:16px;line-height:1.65;color:#8B96AD;margin:0;max-width:66ch">An index derived from your file is a second copy of the sensitive part:</p>
+    </div>
+
+    <!-- five-item differentiator grid -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-bottom:40px">
+      <div data-reveal style="border:1px solid rgba(255,255,255,0.09);border-radius:13px;padding:24px 22px;background:rgba(255,255,255,0.015)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:20px;color:#FF5C5C;margin-bottom:14px">[¶]</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#FF5C5C;margin-bottom:12px">CHUNKS</div>
+        <p style="font-size:14.5px;line-height:1.55;color:#8B96AD;margin:0">Verbatim passages lifted straight out of the document. Not a summary. The text itself.</p>
+      </div>
+      <div data-reveal style="border:1px solid rgba(255,255,255,0.09);border-radius:13px;padding:24px 22px;background:rgba(255,255,255,0.015)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:20px;color:#FF5C5C;margin-bottom:14px">[≈]</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#FF5C5C;margin-bottom:12px">EMBEDDINGS</div>
+        <p style="font-size:14.5px;line-height:1.55;color:#8B96AD;margin:0">Encode the meaning, and are reversible enough to <span style="color:#C7D0E2">reconstruct the source</span>.</p>
+      </div>
+      <div data-reveal style="border:1px solid rgba(255,255,255,0.09);border-radius:13px;padding:24px 22px;background:rgba(255,255,255,0.015)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:20px;color:#FF5C5C;margin-bottom:14px">[#]</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#FF5C5C;margin-bottom:12px">KEYWORDS</div>
+        <p style="font-size:14.5px;line-height:1.55;color:#8B96AD;margin:0">Client names, matter numbers, deal codenames, in plaintext.</p>
+      </div>
+      <div data-reveal style="border:1px solid rgba(255,255,255,0.09);border-radius:13px;padding:24px 22px;background:rgba(255,255,255,0.015)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:20px;color:#FF5C5C;margin-bottom:14px">[⊟]</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#FF5C5C;margin-bottom:12px">METADATA</div>
+        <p style="font-size:14.5px;line-height:1.55;color:#8B96AD;margin:0">Authors, dates, case IDs, file paths: a map of everything you hold.</p>
+      </div>
+      <div data-reveal style="border:1px solid rgba(255,255,255,0.09);border-radius:13px;padding:24px 22px;background:rgba(255,255,255,0.015)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:20px;color:#FF5C5C;margin-bottom:14px">[⇄]</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#FF5C5C;margin-bottom:12px">RELATIONSHIPS</div>
+        <p style="font-size:14.5px;line-height:1.55;color:#8B96AD;margin:0">Which parties, entities, and documents connect. Disclosure without a single sentence leaving.</p>
+      </div>
+    </div>
+
+    <p data-reveal style="font-size:16px;line-height:1.65;color:#8B96AD;margin:0 0 32px;max-width:64ch">The original file never moved. The privileged information did.</p>
+
+    <!-- clean statement -->
+    <div data-reveal style="position:relative;border-left:2px solid #27FDFC;padding:22px 0 22px 26px;max-width:72ch">
+      <span aria-hidden="true" style="position:absolute;top:14px;left:-9px;font-family:'JetBrains Mono',monospace;color:#27FDFC;font-size:14px;background:#05070E;padding:2px 0">◆</span>
+      <p style="font-family:'Sora',sans-serif;font-weight:500;font-size:clamp(17px,2.2vw,22px);line-height:1.4;color:#EAF0FF;margin:0">A cloud index of local content is <span style="color:#27FDFC">exfiltration</span> the moment it can disclose, infer, search, or reconstruct protected material outside your walls. DPLYD keeps the index on the same side of the boundary as the file. Always.</p>
+    </div>
+  </section>
+
+  <!-- ================= BRING THE AI TO THE DATA ================= -->
+  <section style="position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:clamp(48px,7vw,88px) 32px">
+    <div style="max-width:1080px;margin:0 auto 52px">
+      <div data-reveal style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.26em;text-transform:uppercase;color:#27FDFC;margin-bottom:22px">The&nbsp;Approach</div>
+      <h2 data-reveal style="font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(30px,5vw,52px);line-height:1.06;letter-spacing:-0.02em;margin:0 0 24px;color:#fff;max-width:20ch">Bring the AI to the data — <span style="color:#27FDFC">not the reverse.</span></h2>
+      <p data-reveal style="font-size:clamp(17px,2.2vw,21px);line-height:1.6;color:#8B96AD;margin:0;max-width:60ch">DPLYD is a managed AI appliance that lives on your perimeter. The model runs where your files already are.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px">
+      <div data-reveal class="card-hover" style="position:relative;border:1px solid rgba(255,255,255,0.09);border-radius:14px;padding:30px 26px;background:rgba(255,255,255,0.015)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:24px;color:#27FDFC;margin-bottom:20px">[⊡]</div>
+        <h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:20px;color:#fff;margin:0 0 10px">On your perimeter</h3>
+        <p style="font-size:15px;line-height:1.6;color:#8B96AD;margin:0">Documents never cross your boundary. Full generative capability, zero egress of privileged content.</p>
+      </div>
+      <div data-reveal class="card-hover" style="position:relative;border:1px solid rgba(255,255,255,0.09);border-radius:14px;padding:30px 26px;background:rgba(255,255,255,0.015)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:24px;color:#27FDFC;margin-bottom:20px">[↻]</div>
+        <h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:20px;color:#fff;margin:0 0 10px">Fully managed</h3>
+        <p style="font-size:15px;line-height:1.6;color:#8B96AD;margin:0">We own the hardware, updates, and lifecycle. Your team operates; we maintain. No servers for your IT to babysit.</p>
+      </div>
+      <div data-reveal class="card-hover" style="position:relative;border:1px solid rgba(255,255,255,0.09);border-radius:14px;padding:30px 26px;background:rgba(255,255,255,0.015)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:24px;color:#27FDFC;margin-bottom:20px">[≡]</div>
+        <h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:20px;color:#fff;margin:0 0 10px">Predictable economics</h3>
+        <p style="font-size:15px;line-height:1.6;color:#8B96AD;margin:0">Fixed monthly. No per-seat licensing. No per-token metering. No capex. Every lawyer, paralegal, and staff member works from the same appliance — price doesn't climb because you gave the whole litigation team access.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GENERAL-PURPOSE + LEGAL ================= -->
+  <section style="position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:clamp(48px,7vw,88px) 32px">
+    <div data-reveal style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.26em;text-transform:uppercase;color:#27FDFC;margin-bottom:22px">The&nbsp;Workload</div>
+    <h2 data-reveal style="font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(28px,4.6vw,48px);line-height:1.07;letter-spacing:-0.02em;margin:0 0 24px;color:#fff;max-width:24ch">General-purpose intelligence, with legal where it counts.</h2>
+    <p data-reveal style="font-size:clamp(16px,2.1vw,20px);line-height:1.6;color:#8B96AD;margin:0 0 36px;max-width:66ch">DPLYD isn't a narrow legal point-tool. The appliance runs capable general models — the same drafting, summarizing, and reasoning your team would reach for anywhere — plus legal-specific workflows on top.</p>
+    <div data-reveal style="display:flex;flex-direction:column;gap:14px;margin-bottom:36px">
+      <span style="font-size:16px;color:#EAF0FF;display:flex;gap:12px;line-height:1.5"><span style="color:#27FDFC;font-family:'JetBrains Mono',monospace;flex-shrink:0">▸</span>Draft, redline, and summarize across large matter sets</span>
+      <span style="font-size:16px;color:#EAF0FF;display:flex;gap:12px;line-height:1.5"><span style="color:#27FDFC;font-family:'JetBrains Mono',monospace;flex-shrink:0">▸</span>Issue-spot and triage document productions</span>
+      <span style="font-size:16px;color:#EAF0FF;display:flex;gap:12px;line-height:1.5"><span style="color:#27FDFC;font-family:'JetBrains Mono',monospace;flex-shrink:0">▸</span>Assist motion and memo drafting against your own precedent bank</span>
+      <span style="font-size:16px;color:#EAF0FF;display:flex;gap:12px;line-height:1.5"><span style="color:#27FDFC;font-family:'JetBrains Mono',monospace;flex-shrink:0">▸</span>Search your firm's knowledge base — closed deals, prior briefs, templates — grounded in <em>your</em> work product, not the open internet</span>
+      <span style="font-size:16px;color:#EAF0FF;display:flex;gap:12px;line-height:1.5"><span style="color:#27FDFC;font-family:'JetBrains Mono',monospace;flex-shrink:0">▸</span>Intake and conflict-check support</span>
+    </div>
+    <p data-reveal style="font-size:16px;line-height:1.65;color:#8B96AD;margin:0;max-width:66ch">One appliance serves the whole firm. Legal work gets legal handling; everything else your people do with AI runs on the same secure box.</p>
+  </section>
+
+  <!-- ================= AUDIT-READY ================= -->
+  <section style="position:relative;z-index:1;border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);background:linear-gradient(180deg, rgba(255,233,74,0.03), transparent 60%)">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(64px,9vw,110px) 32px">
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(36px,5vw,64px);align-items:center">
+        <div style="flex:1 1 400px;min-width:min(100%,360px)">
+          <div data-reveal style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.26em;text-transform:uppercase;color:#FFE94A;margin-bottom:22px">The&nbsp;Record</div>
+          <h2 data-reveal style="font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(30px,5vw,52px);line-height:1.06;letter-spacing:-0.02em;margin:0 0 22px;color:#fff">Audit-ready <span style="color:#FFE94A">by construction.</span></h2>
+          <p data-reveal style="font-size:clamp(16px,2.1vw,20px);line-height:1.6;color:#8B96AD;margin:0 0 16px;max-width:54ch">Compliance shouldn't be a slide deck you assemble the week before a client security review. DPLYD produces an immutable, exportable record of every AI interaction: what ran, on which documents, under what policy, with what result.</p>
+          <p data-reveal style="font-size:16px;line-height:1.6;color:#8B96AD;margin:0 0 30px;max-width:54ch">When a client's outside-counsel guidelines demand proof — or when a malpractice question surfaces two years later — the evidence already exists.</p>
+          <div data-reveal style="display:inline-flex;align-items:center;gap:16px;flex-wrap:wrap">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:clamp(15px,2.4vw,20px);color:#5C6579;text-decoration:line-through">"trust us"</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:18px;color:#FFE94A">──▶</span>
+            <span style="font-family:'Sora',sans-serif;font-weight:600;font-size:clamp(17px,2.6vw,24px);color:#FFE94A">evidence on demand.</span>
+          </div>
+        </div>
+        <div data-reveal style="flex:1 1 360px;min-width:min(100%,320px)">
+          <div style="border:1px solid rgba(255,233,74,0.28);border-radius:14px;background:rgba(255,233,74,0.03);padding:22px;font-family:'JetBrains Mono',monospace;font-size:12.5px;line-height:2">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.08)">
+              <span style="color:#FFE94A;letter-spacing:0.16em">SENTINEL&nbsp;·&nbsp;AUDIT&nbsp;LOG</span>
+              <span style="color:#5C6579">immutable</span>
+            </div>
+            <div style="color:#8B96AD"><span style="color:#3A9C6E">✔</span> matter_id&nbsp;&nbsp;<span style="color:#5C6579">bound</span></div>
+            <div style="color:#8B96AD"><span style="color:#3A9C6E">✔</span> access_scope&nbsp;&nbsp;<span style="color:#5C6579">verified</span></div>
+            <div style="color:#8B96AD"><span style="color:#3A9C6E">✔</span> privilege_flag&nbsp;&nbsp;<span style="color:#5C6579">enforced</span></div>
+            <div style="color:#8B96AD"><span style="color:#3A9C6E">✔</span> data_boundary&nbsp;&nbsp;<span style="color:#5C6579">enforced</span></div>
+            <div style="margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.08);color:#FFE94A">▸ export&nbsp;evidence&nbsp;<span style="animation:pulseDot 1.4s ease-in-out infinite">▮</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMPARISON TABLE ================= -->
+  <section style="position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:clamp(64px,9vw,110px) 32px">
+    <div data-reveal style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.26em;text-transform:uppercase;color:#27FDFC;margin-bottom:22px">The&nbsp;Comparison</div>
+    <h2 data-reveal style="font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(28px,4.6vw,46px);line-height:1.07;letter-spacing:-0.02em;margin:0 0 32px;color:#fff;max-width:22ch">DPLYD vs. cloud legal AI.</h2>
+
+    <div data-reveal class="table-wrap" style="border:1px solid rgba(255,255,255,0.09);border-radius:14px;background:rgba(255,255,255,0.015);margin-bottom:28px">
+      <table class="cmp-table" style="width:100%;min-width:620px">
+        <thead>
+          <tr>
+            <th style="width:26%"></th>
+            <th>Cloud legal AI</th>
+            <th style="color:#27FDFC">DPLYD</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cmp-row-label">Where your data goes</td>
+            <td class="cmp-cloud">Shipped to a third-party API</td>
+            <td class="cmp-dplyd">Never leaves your perimeter</td>
+          </tr>
+          <tr>
+            <td class="cmp-row-label">The index</td>
+            <td class="cmp-cloud">Copied to the cloud</td>
+            <td class="cmp-dplyd">Stays inside your boundary</td>
+          </tr>
+          <tr>
+            <td class="cmp-row-label">Pricing</td>
+            <td class="cmp-cloud">Per lawyer, per month</td>
+            <td class="cmp-dplyd">Fixed monthly — no per-seat, no per-token</td>
+          </tr>
+          <tr>
+            <td class="cmp-row-label">Scope</td>
+            <td class="cmp-cloud">Legal tasks only</td>
+            <td class="cmp-dplyd">General AI + legal workflows, one appliance</td>
+          </tr>
+          <tr>
+            <td class="cmp-row-label">Infrastructure</td>
+            <td class="cmp-cloud">Someone else's cloud</td>
+            <td class="cmp-dplyd">Managed hardware on your premises</td>
+          </tr>
+          <tr>
+            <td class="cmp-row-label">Air-gapped / classified work</td>
+            <td class="cmp-cloud">Not possible</td>
+            <td class="cmp-dplyd">Supported by design</td>
+          </tr>
+          <tr>
+            <td class="cmp-row-label">Audit evidence</td>
+            <td class="cmp-cloud">Contractual assurance</td>
+            <td class="cmp-dplyd">Immutable, exportable record</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p data-reveal style="font-size:16px;line-height:1.65;color:#8B96AD;margin:0;max-width:68ch">The cloud tools are good software. But they solve for legal output while asking you to accept data egress as the cost. DPLYD refuses the trade: <span style="color:#27FDFC">the intelligence comes to the data.</span></p>
+  </section>
+
+  <!-- ================= BUILT FOR ================= -->
+  <section style="position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:clamp(40px,6vw,72px) 32px clamp(64px,9vw,110px)">
+    <div data-reveal style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.26em;text-transform:uppercase;color:#27FDFC;margin-bottom:22px">Who&nbsp;It's&nbsp;For</div>
+    <h2 data-reveal style="font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(28px,4.6vw,46px);line-height:1.07;letter-spacing:-0.02em;margin:0 0 24px;color:#fff;max-width:22ch">Built for the firms cloud AI can't serve.</h2>
+    <p data-reveal style="font-size:clamp(17px,2.2vw,21px);line-height:1.6;color:#8B96AD;margin:0 0 32px;max-width:66ch">Some work simply cannot go to a third-party API: government and defense counsel, matters under protective order, clients whose outside-counsel guidelines forbid third-party AI processing, and any firm that treats privilege as non-negotiable.</p>
+    <div data-reveal style="position:relative;border-left:2px solid #27FDFC;padding:20px 0 20px 26px;max-width:60ch">
+      <span aria-hidden="true" style="position:absolute;top:12px;left:-9px;font-family:'JetBrains Mono',monospace;color:#27FDFC;font-size:14px;background:#05070E;padding:2px 0">◆</span>
+      <p style="font-family:'Sora',sans-serif;font-weight:500;font-size:clamp(18px,2.4vw,24px);line-height:1.35;color:#EAF0FF;margin:0">If your answer to "where does the data go?" has to be <em>nowhere</em> — <span style="color:#27FDFC">DPLYD is the only version of this that works.</span></p>
+    </div>
+  </section>
+
+  <!-- divider -->
+  <div aria-hidden="true" style="position:relative;z-index:1;overflow:hidden;height:26px;opacity:0.4"><div style="display:flex;width:200%;animation:waveDrift 24s linear infinite;font-family:'JetBrains Mono',monospace;font-size:15px;line-height:26px;color:#27FDFC;white-space:nowrap"><span>·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~</span><span>·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~·~</span></div></div>
+
+  <!-- ================= FINAL CTA ================= -->
+  <section id="book" style="position:relative;z-index:1;scroll-margin-top:80px;max-width:900px;margin:0 auto;padding:clamp(64px,9vw,110px) 32px">
+    <div style="text-align:center;margin-bottom:44px">
+      <h2 data-reveal style="font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(30px,5.4vw,50px);line-height:1.05;letter-spacing:-0.025em;margin:0 0 20px;color:#fff">See it on your own matters.</h2>
+      <p data-reveal style="font-size:clamp(17px,2.4vw,21px);line-height:1.5;color:#8B96AD;margin:0">A 30-minute walkthrough of the appliance, running on your data, inside your boundary.</p>
+    </div>
+    <div data-reveal style="border:1px solid rgba(39,253,252,0.28);border-radius:16px;padding:34px 30px;background:linear-gradient(160deg, rgba(39,253,252,0.06), transparent);display:flex;flex-direction:column">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.2em;color:#27FDFC;margin-bottom:20px">▸ BOOK A DEMO</div>
+      <div id="cal-inline-legal" style="height:560px;flex:none;overflow:auto;border:1px solid rgba(39,253,252,0.3);border-radius:10px;background:#05070E;margin-bottom:22px"></div>
+      <a href="https://cal.com/kdplyd/30min" target="_blank" rel="noopener" class="btn-primary" style="align-self:center;display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;letter-spacing:0.05em;color:#05070E;background:#27FDFC;padding:15px 26px;border-radius:9px">Book a Demo <span>→</span></a>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer style="position:relative;z-index:1;border-top:1px solid rgba(255,255,255,0.08);background:#070A12">
+    <!-- waterline top edge -->
+    <div aria-hidden="true" style="overflow:hidden;height:22px;opacity:0.35"><div style="display:flex;width:200%;animation:waveDrift 30s linear infinite;font-family:'JetBrains Mono',monospace;font-size:14px;line-height:22px;color:#27FDFC;white-space:nowrap"><span>≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿</span><span>≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿</span></div></div>
+    <div style="max-width:1280px;margin:0 auto;padding:52px 32px 40px">
+      <div style="display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:flex-start;margin-bottom:40px">
+        <div style="max-width:340px">
+          <img src="../../assets/dplyd-logo.png" alt="DPLYD AI" style="height:26px;display:block;margin-bottom:16px">
+          <p style="font-size:14.5px;line-height:1.6;color:#8B96AD;margin:0">On-prem AI for law firms. The appliance that keeps privilege inside your perimeter.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:48px">
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#5C6579">PLATFORM</span>
+            <a href="../../#platform" class="foot-link" style="font-size:14px;color:#AEB8CC">Lighthouse (Security &amp; Compliance)</a>
+            <a href="../../#platform" class="foot-link" style="font-size:14px;color:#AEB8CC">Sentinel (Audit Log)</a>
+            <a href="../../#verticals" class="foot-link" style="font-size:14px;color:#AEB8CC">Other verticals</a>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#5C6579">COMPANY</span>
+            <a href="#book" class="foot-link" style="font-size:14px;color:#AEB8CC">Book a Demo</a>
+            <a href="../../#contact" class="foot-link" style="font-size:14px;color:#AEB8CC">Contact Sales</a>
+            <a href="mailto:info@dplyd.io" class="foot-link" style="font-size:14px;color:#AEB8CC">info@dplyd.io</a>
+          </div>
+        </div>
+      </div>
+      <!-- trust badge strip -->
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;padding:20px 0;border-top:1px solid rgba(255,255,255,0.07);border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:24px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.16em;color:#5C6579">BUILT&nbsp;TO&nbsp;THE&nbsp;STANDARD&nbsp;OF</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#AEB8CC;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:6px 12px">SOC 2</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#AEB8CC;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:6px 12px">HIPAA</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#AEB8CC;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:6px 12px">CMMC L2</span>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5C6579">© 2026 DPLYD AI</span>
+        <div style="display:flex;gap:24px">
+          <a href="../../#security" class="foot-link-sub" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5C6579">Security</a>
+          <a href="../../terms/" class="foot-link-sub" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5C6579">Terms</a>
+          <a href="mailto:info@dplyd.io" class="foot-link-sub" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5C6579">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var q = function (s) { return document.querySelector(s); };
+      var qa = function (s) { return Array.from(document.querySelectorAll(s)); };
+
+      // scroll reveals
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.style.opacity = '1';
+            e.target.style.transform = 'none';
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -7% 0px' });
+
+      qa('[data-reveal]').forEach(function (el) {
+        var r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight * 0.92) {
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+        } else {
+          el.style.opacity = '0';
+          el.style.transform = 'translateY(24px)';
+          io.observe(el);
+        }
+      });
+
+      // cal.com inline embed
+      (function (C, A, L) { var p = function (a, ar) { a.q.push(ar); }; var d = C.document; C.Cal = C.Cal || function () { var cal = C.Cal; var ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { var api = function () { p(api, arguments); }; var namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      if (q('#cal-inline-legal')) {
+        Cal("init", "30min", { origin: "https://cal.com" });
+        Cal.ns["30min"]("inline", {
+          elementOrSelector: "#cal-inline-legal",
+          config: { layout: "month_view" },
+          calLink: "kdplyd/30min",
+        });
+        Cal.ns["30min"]("ui", { hideEventTypeDetails: false, layout: "month_view", theme: "dark", cssVarsPerTheme: { dark: { "cal-brand": "#27FDFC" } } });
+      }
+
+      // header scrolled state
+      var header = q('#siteHeader');
+      var onScroll = function () {
+        if (!header) return;
+        header.style.background = window.scrollY > 24 ? 'rgba(5,7,14,0.9)' : 'rgba(5,7,14,0.55)';
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // responsive nav
+      var toggle = q('#navToggle');
+      var mob = q('#mobnav');
+      if (toggle && mob) {
+        toggle.addEventListener('click', function () {
+          var open = mob.style.display === 'block';
+          mob.style.display = open ? 'none' : 'block';
+          toggle.setAttribute('aria-expanded', String(!open));
+        });
+        mob.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', function () { mob.style.display = 'none'; });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
