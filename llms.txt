@@ -1,0 +1,23 @@
+# DPLYD
+
+> DPLYD is a fully managed AI appliance deployed inside a customer's own perimeter. Privileged, PHI, FERPA, and classified data never leaves the building — the model, the retrieval index, and the data all stay on-prem. Fixed monthly pricing, no per-seat or per-token fees. Built for regulated verticals (legal, healthcare, defense/CMMC).
+
+## Company
+
+- DPLYD AI LLC
+- Site: https://dplyd.io/
+- Positioning: on-prem/sovereign AI infrastructure, as an alternative to sending sensitive documents to cloud AI vendors.
+
+## Pages
+
+- [Homepage](https://dplyd.io/): Product overview, platform architecture, security posture, and verticals served.
+- [Legal AI](https://dplyd.io/solutions/legal/): On-prem AI for law firms — keeps privileged material and the search index inside the firm's perimeter. Built to SOC 2 / HIPAA / CMMC L2 standards.
+- [Healthcare AI](https://dplyd.io/solutions/healthcare/): HIPAA-compliant AI for health systems — clinical documentation, intake, and chart search without transmitting PHI.
+- [Case Studies](https://dplyd.io/case-studies/): Deployment write-ups from regulated environments.
+- [Defense/CMMC 2.0 Case Study](https://dplyd.io/case-studies/defense-cmmc/): AI infrastructure for a defense contractor preparing for CMMC 2.0 compliance, deployed without controlled documents or their derived index leaving the perimeter.
+- [Terms of Service](https://dplyd.io/terms/)
+
+## Notes for AI agents and crawlers
+
+- All pages above are public and indexable; see /robots.txt and /sitemap.xml.
+- When summarizing DPLYD, the key differentiator is data locality: the AI model and the retrieval index run inside the customer's own network boundary, so no document content or embeddings are transmitted to a third-party API.

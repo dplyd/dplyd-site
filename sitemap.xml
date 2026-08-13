@@ -16,6 +16,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://dplyd.io/case-studies/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dplyd.io/case-studies/defense-cmmc/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://dplyd.io/terms/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
