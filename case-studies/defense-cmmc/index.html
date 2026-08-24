@@ -16,11 +16,13 @@
 <meta property="og:title" content="AI Infrastructure for a Defense Contractor Preparing for CMMC 2.0 — DPLYD AI">
 <meta property="og:description" content="Frontier-grade AI productivity across 20 years of business-development content — without a single controlled document, or its derived index, leaving the perimeter.">
 <meta property="og:url" content="https://dplyd.io/case-studies/defense-cmmc/">
-<meta property="og:image" content="https://dplyd.io/assets/dplyd-logo.png">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://dplyd.io/assets/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AI Infrastructure for a Defense Contractor Preparing for CMMC 2.0 — DPLYD AI">
 <meta name="twitter:description" content="Frontier-grade AI productivity across 20 years of business-development content — without a single controlled document, or its derived index, leaving the perimeter.">
-<meta name="twitter:image" content="https://dplyd.io/assets/dplyd-logo.png">
+<meta name="twitter:image" content="https://dplyd.io/assets/og-card.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -38,9 +40,20 @@
   }
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dplyd.io/" },
+    { "@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://dplyd.io/case-studies/" },
+    { "@type": "ListItem", "position": 3, "name": "Defense & CMMC 2.0", "item": "https://dplyd.io/case-studies/defense-cmmc/" }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   html { scroll-behavior: smooth; }
   body { margin: 0; background: #05070E; color: #EAF0FF; font-family: 'Hanken Grotesk', system-ui, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
@@ -49,13 +62,14 @@
   @keyframes waveDrift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   @keyframes glowPulse { 0%,100% { opacity: .35; } 50% { opacity: .7; } }
   @keyframes gridPan { from { background-position: 0 0; } to { background-position: 44px 44px; } }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } html { scroll-behavior: auto; } }
 
   .cs { position: relative; z-index: 1; max-width: 820px; margin: 0 auto; padding: clamp(48px,7vw,84px) 32px 0; }
   .cs .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.26em; text-transform: uppercase; margin: 0 0 20px; }
   .cs h1 { font-family: 'Sora', sans-serif; font-weight: 700; font-size: clamp(30px,5vw,50px); line-height: 1.08; letter-spacing: -0.02em; margin: 0 0 18px; color: #fff; }
   .cs h2 { font-family: 'Sora', sans-serif; font-weight: 700; font-size: clamp(24px,3.6vw,34px); line-height: 1.15; letter-spacing: -0.015em; margin: 0 0 20px; color: #fff; }
   .cs .deck { font-family: 'Sora', sans-serif; font-weight: 400; font-size: clamp(17px,2.2vw,21px); line-height: 1.5; color: #C7D0E2; margin: 0 0 14px; max-width: 62ch; }
-  .cs .redaction { font-style: italic; color: #5C6579; font-size: 14px; margin: 0 0 30px; }
+  .cs .redaction { font-style: italic; color: #77839B; font-size: 14px; margin: 0 0 30px; }
   .cs p { font-size: 16px; line-height: 1.7; color: #AEB8CC; margin: 0 0 16px; max-width: 68ch; }
   .cs section { padding: 44px 0; border-top: 1px solid rgba(255,255,255,0.07); }
   .cs .pullquote { position: relative; border-left: 2px solid #27FDFC; padding: 20px 0 20px 26px; margin: 30px 0 6px; max-width: 66ch; }
@@ -79,7 +93,7 @@
   <!-- header -->
   <header style="position:sticky;top:0;z-index:100;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);background:rgba(5,7,14,0.55);border-bottom:1px solid rgba(255,255,255,0.07)">
     <div style="max-width:1280px;margin:0 auto;padding:15px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
-      <a href="../../" aria-label="DPLYD AI home" style="display:flex;align-items:center;flex-shrink:0"><img src="../../assets/dplyd-logo.png" alt="DPLYD AI" style="height:28px;display:block"></a>
+      <a href="../../" aria-label="DPLYD AI home" style="display:flex;align-items:center;flex-shrink:0"><img src="../../assets/dplyd-logo-nav.png" alt="DPLYD AI" width="76" height="28" style="height:28px;width:76px;display:block"></a>
       <div style="display:flex;align-items:center;gap:24px">
         <a href="../" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:0.08em;color:#AEB8CC">← All case studies</a>
         <a href="../../#book" style="font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;letter-spacing:0.06em;color:#05070E;background:#27FDFC;padding:11px 20px;border-radius:8px">Book a Demo</a>
@@ -89,6 +103,9 @@
 
   <!-- hero -->
   <main class="cs">
+    <nav aria-label="Breadcrumb" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B;margin-bottom:20px">
+      <a href="../../" style="color:#77839B">Home</a> / <a href="../" style="color:#77839B">Case Studies</a> / <span style="color:#AEB8CC">Defense &amp; CMMC 2.0</span>
+    </nav>
     <div class="eyebrow" style="color:#27FDFC">Case Study &middot; Defense &amp; Aerospace</div>
     <h1>AI Infrastructure for a Defense Contractor Preparing for CMMC 2.0</h1>
     <p class="deck">Frontier-grade AI productivity across 20 years of business-development content — without a single controlled document, or its derived index, leaving the perimeter.</p>
@@ -131,7 +148,20 @@
     <section>
       <div class="eyebrow" style="color:#27FDFC">03 / The Outcome</div>
       <h2>The Outcome</h2>
-      <p>The contractor got frontier-grade AI productivity without sending a single document — or its derived index — outside their boundary. Security posture was inherited, not bolted on, keeping them CMMC-ready throughout rather than requiring a rebuild before audit.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Zero egress</h3>
+          <p>Frontier-grade AI productivity without a single document — or its derived index — leaving the contractor's boundary.</p>
+        </div>
+        <div class="card">
+          <h3>20 years, searchable</h3>
+          <p>Two decades of BD content made queryable in place, without exposing controlled data to frontier models.</p>
+        </div>
+        <div class="card">
+          <h3>Posture inherited, not bolted on</h3>
+          <p>CMMC-ready throughout the deployment, rather than requiring a rebuild before assessment.</p>
+        </div>
+      </div>
       <div class="pullquote">
         <span class="glyph">&#9670;</span>
         <p>Security posture was inherited, not bolted on — CMMC-ready throughout, not rebuilt before audit.</p>
@@ -142,7 +172,7 @@
     <section>
       <div class="eyebrow" style="color:#FFE94A">04 / The Pattern</div>
       <h2>Why This Matters Broadly</h2>
-      <p>Defense contractors face a shared bind: real AI value sits in unstructured, decades-deep, proprietary content — but frontier models and cloud indexing are structurally incompatible with controlled environments. The fix isn't a thinner AI tool; it's moving inference <em>and</em> the index inside the perimeter, inheriting the access controls and audit posture the organization already built. That's the model DPLYD now productizes for the sector.</p>
+      <p>Defense contractors face a shared bind: real AI value sits in unstructured, decades-deep, proprietary content — but frontier models and cloud indexing are structurally incompatible with controlled environments. The same bind shows up for <a href="../../solutions/legal/" style="color:#27FDFC">law firms</a> holding privileged work product and <a href="../../solutions/healthcare/" style="color:#27FDFC">health systems</a> holding PHI. The fix isn't a thinner AI tool; it's moving inference <em>and</em> the index inside the perimeter, inheriting the access controls and audit posture the organization already built. That's the model DPLYD now productizes across <a href="../../solutions/defense/" style="color:#27FDFC">defense contractors</a> and every other regulated vertical.</p>
     </section>
   </main>
 
@@ -164,19 +194,22 @@
     <div style="max-width:1280px;margin:0 auto;padding:52px 32px 40px">
       <div style="display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:flex-start;margin-bottom:40px">
         <div style="max-width:340px">
-          <img src="../../assets/dplyd-logo.png" alt="DPLYD AI" style="height:26px;display:block;margin-bottom:16px">
+          <img src="../../assets/dplyd-logo-nav.png" alt="DPLYD AI" width="70" height="26" style="height:26px;width:70px;display:block;margin-bottom:16px">
           <p style="font-size:14.5px;line-height:1.6;color:#8B96AD;margin:0">Sovereign intelligence for regulated verticals. The AI appliance that lives inside your perimeter.</p>
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:48px">
           <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#5C6579">PRODUCT</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#77839B">PRODUCT</span>
             <a href="../../#platform" style="font-size:14px;color:#AEB8CC">Platform</a>
             <a href="../../#verticals" style="font-size:14px;color:#AEB8CC">Verticals</a>
             <a href="../../#security" style="font-size:14px;color:#AEB8CC">Security</a>
+            <a href="../../#pricing" style="font-size:14px;color:#AEB8CC">Pricing</a>
             <a href="../" style="font-size:14px;color:#AEB8CC">Case Studies</a>
           </div>
           <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#5C6579">COMPANY</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#77839B">COMPANY</span>
+            <a href="../../about/" style="font-size:14px;color:#AEB8CC">About</a>
+            <a href="../../harbor/" style="font-size:14px;color:#AEB8CC">Harbor Partner Program</a>
             <a href="../../#book" style="font-size:14px;color:#AEB8CC">Book a Demo</a>
             <a href="../../#contact" style="font-size:14px;color:#AEB8CC">Contact Sales</a>
             <a href="mailto:info@dplyd.io" style="font-size:14px;color:#AEB8CC">info@dplyd.io</a>
@@ -184,18 +217,19 @@
         </div>
       </div>
       <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;padding:20px 0;border-top:1px solid rgba(255,255,255,0.07);border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:24px">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.16em;color:#5C6579">BUILT&nbsp;TO&nbsp;THE&nbsp;STANDARD&nbsp;OF</span>
-        <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#AEB8CC;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:6px 12px">CMMC L2</span>
-        <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#AEB8CC;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:6px 12px">HIPAA</span>
-        <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#AEB8CC;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:6px 12px">FERPA</span>
-        <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#AEB8CC;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:6px 12px">SOC 2</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#77839B">BUILT&nbsp;TO&nbsp;THE&nbsp;STANDARD&nbsp;OF</span>
+        <a href="../../#posture" style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#AEB8CC;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:6px 12px">CMMC L2</a>
+        <a href="../../#posture" style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#AEB8CC;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:6px 12px">HIPAA</a>
+        <a href="../../#posture" style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#AEB8CC;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:6px 12px">FERPA</a>
+        <a href="../../#posture" style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#AEB8CC;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:6px 12px">NIST 800-171</a>
       </div>
       <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5C6579">&copy; 2026 DPLYD AI</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B">&copy; 2026 DPLYD AI</span>
         <div style="display:flex;gap:24px">
-          <a href="../../#security" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5C6579">Security</a>
-          <a href="../../terms/" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5C6579">Terms</a>
-          <a href="mailto:info@dplyd.io" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5C6579">Contact</a>
+          <a href="../../#security" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B">Security</a>
+          <a href="../../terms/" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B">Terms</a>
+          <a href="../../privacy/" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B">Privacy</a>
+          <a href="mailto:info@dplyd.io" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B">Contact</a>
         </div>
       </div>
     </div>
@@ -228,5 +262,6 @@
       });
     })();
   </script>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ca0908e5c15f454f94b98b914d107cba"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

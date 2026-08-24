@@ -1,51 +1,3 @@
-<!--
-  ============================================================================
-  CASE STUDY TEMPLATE
-  ============================================================================
-  Source for every case study on the site. This directory is not linked from
-  anywhere and robots.txt disallows /_templates/ — but note that GitHub Pages
-  still SERVES it, so keep real customer content out of this file.
-
-  TO PUBLISH A NEW CASE STUDY
-  ---------------------------
-  1. Copy it into place (paths in this file assume that destination depth):
-       mkdir -p case-studies/<slug>
-       cp _templates/case-study-template.html case-studies/<slug>/index.html
-
-  2. Replace every {{TOKEN}}:
-       {{SLUG}}              url slug, e.g. defense-cmmc
-       {{TITLE}}             headline, no " — DPLYD AI" suffix (added already)
-       {{DECK}}              one-sentence summary; reused in meta/OG/schema
-       {{VERTICAL_LABEL}}    e.g. Defense & Aerospace
-       {{BREADCRUMB_LABEL}}  short crumb, e.g. Defense & CMMC 2.0
-       {{REDACTION_NOTE}}    e.g. "Defense contractor. Name redacted at their request."
-       {{INDUSTRY}}          chip value
-       {{CHALLENGE}}         chip value, one sentence
-       {{PUBLISH_DATE}}      ISO date, e.g. 2026-08-24
-       {{PROBLEM_BODY}}      one or more <p> paragraphs
-       {{SOLUTION_INTRO}}    one sentence
-       {{SOLUTION_POINTS}}   2-4 <div class="card"><h3>..</h3><p>..</p></div>
-       {{OUTCOME_CARDS}}     2-3 <div class="card"><h3>..</h3><p>..</p></div>
-       {{PULLQUOTE}}         one memorable sentence
-       {{WHY_BROADLY}}       one or more <p> paragraphs
-
-  3. Add a card for it to case-studies/index.html (the hub page).
-  4. Add its URL to sitemap.xml and to the Pages list in llms.txt.
-  5. Optionally link it from the relevant vertical page and the homepage
-     "Field Results" section.
-
-  HOUSE RULES (enforced across the site — do not regress these)
-  -------------------------------------------------------------
-  - No invented metrics, customers, or certifications. Restate only what the
-    engagement actually produced.
-  - Compliance wording claims architecture ("built to the standard of",
-    "aligned to"), never certification. Do NOT add SOC 2 anywhere.
-  - Dim label colour is #77839B (not #5C6579 — fails AA at small sizes).
-  - Mono labels floor at 11px.
-  - Every page carries the Cloudflare beacon before </body>.
-  - Keep the ASCII/terminal motifs; fix execution, never remove the language.
-  ============================================================================
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,29 +8,29 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
 <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<title>{{TITLE}} — DPLYD AI</title>
-<meta name="description" content="{{DECK}}">
-<link rel="canonical" href="https://dplyd.io/case-studies/{{SLUG}}/">
+<title>The Index Is the Leak — Why "On-Prem" AI Usually Isn't | DPLYD</title>
+<meta name="description" content="Keeping the file local isn't enough. Keywords, chunks, embeddings, and metadata shipped to a cloud index are a second copy of your document — queryable, correlatable, and often reversible.">
+<link rel="canonical" href="https://dplyd.io/learn/the-index-is-the-leak/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="DPLYD">
-<meta property="og:title" content="{{TITLE}} — DPLYD AI">
-<meta property="og:description" content="{{DECK}}">
-<meta property="og:url" content="https://dplyd.io/case-studies/{{SLUG}}/">
+<meta property="og:title" content="The Index Is the Leak — Why &quot;On-Prem&quot; AI Usually Isn't | DPLYD">
+<meta property="og:description" content="Keeping the file local isn't enough. Keywords, chunks, embeddings, and metadata shipped to a cloud index are a second copy of your document.">
+<meta property="og:url" content="https://dplyd.io/learn/the-index-is-the-leak/">
 <meta property="og:image" content="https://dplyd.io/assets/og-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{TITLE}} — DPLYD AI">
-<meta name="twitter:description" content="{{DECK}}">
+<meta name="twitter:title" content="The Index Is the Leak — Why &quot;On-Prem&quot; AI Usually Isn't | DPLYD">
+<meta name="twitter:description" content="Keeping the file local isn't enough. Keywords, chunks, embeddings, and metadata shipped to a cloud index are a second copy of your document.">
 <meta name="twitter:image" content="https://dplyd.io/assets/og-card.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "{{TITLE}}",
-  "description": "{{DECK}}",
-  "url": "https://dplyd.io/case-studies/{{SLUG}}/",
-  "datePublished": "{{PUBLISH_DATE}}",
+  "headline": "The Index Is the Leak — Why \"On-Prem\" AI Usually Isn't",
+  "description": "Keeping the file local isn't enough. Keywords, chunks, embeddings, and metadata shipped to a cloud index are a second copy of your document — queryable, correlatable, and often reversible.",
+  "url": "https://dplyd.io/learn/the-index-is-the-leak/",
+  "datePublished": "2026-08-24",
   "author": { "@type": "Organization", "name": "DPLYD", "url": "https://dplyd.io/" },
   "publisher": {
     "@type": "Organization",
@@ -93,8 +45,8 @@
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dplyd.io/" },
-    { "@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://dplyd.io/case-studies/" },
-    { "@type": "ListItem", "position": 3, "name": "{{BREADCRUMB_LABEL}}", "item": "https://dplyd.io/case-studies/{{SLUG}}/" }
+    { "@type": "ListItem", "position": 2, "name": "Learn" },
+    { "@type": "ListItem", "position": 3, "name": "The Index Is the Leak", "item": "https://dplyd.io/learn/the-index-is-the-leak/" }
   ]
 }
 </script>
@@ -114,21 +66,20 @@
   .cs { position: relative; z-index: 1; max-width: 820px; margin: 0 auto; padding: clamp(48px,7vw,84px) 32px 0; }
   .cs .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.26em; text-transform: uppercase; margin: 0 0 20px; }
   .cs h1 { font-family: 'Sora', sans-serif; font-weight: 700; font-size: clamp(30px,5vw,50px); line-height: 1.08; letter-spacing: -0.02em; margin: 0 0 18px; color: #fff; }
-  .cs h2 { font-family: 'Sora', sans-serif; font-weight: 700; font-size: clamp(24px,3.6vw,34px); line-height: 1.15; letter-spacing: -0.015em; margin: 0 0 20px; color: #fff; }
-  .cs .deck { font-family: 'Sora', sans-serif; font-weight: 400; font-size: clamp(17px,2.2vw,21px); line-height: 1.5; color: #C7D0E2; margin: 0 0 14px; max-width: 62ch; }
-  .cs .redaction { font-style: italic; color: #77839B; font-size: 14px; margin: 0 0 30px; }
+  .cs h2 { font-family: 'Sora', sans-serif; font-weight: 700; font-size: clamp(22px,3.2vw,30px); line-height: 1.15; letter-spacing: -0.015em; margin: 0 0 20px; color: #fff; }
+  .cs .deck { font-family: 'Sora', sans-serif; font-weight: 400; font-size: clamp(17px,2.2vw,21px); line-height: 1.5; color: #C7D0E2; margin: 0 0 30px; max-width: 62ch; }
   .cs p { font-size: 16px; line-height: 1.7; color: #AEB8CC; margin: 0 0 16px; max-width: 68ch; }
-  .cs section { padding: 44px 0; border-top: 1px solid rgba(255,255,255,0.07); }
+  .cs section { padding: 40px 0; border-top: 1px solid rgba(255,255,255,0.07); }
   .cs .pullquote { position: relative; border-left: 2px solid #27FDFC; padding: 20px 0 20px 26px; margin: 30px 0 6px; max-width: 66ch; }
   .cs .pullquote span.glyph { position: absolute; top: 12px; left: -9px; font-family: 'JetBrains Mono', monospace; color: #27FDFC; font-size: 14px; background: #05070E; padding: 2px 0; }
   .cs .pullquote p { font-family: 'Sora', sans-serif; font-weight: 500; font-size: clamp(18px,2.4vw,23px); line-height: 1.4; color: #EAF0FF; margin: 0; }
-  .cs .factstrip { display: flex; flex-wrap: wrap; gap: 12px 16px; margin: 0 0 8px; }
-  .cs .chip { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; letter-spacing: 0.06em; color: #AEB8CC; border: 1px solid rgba(255,255,255,0.14); border-radius: 6px; padding: 8px 12px; }
-  .cs .chip b { color: #27FDFC; font-weight: 700; margin-right: 6px; }
-  .cs .cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 16px; margin-top: 8px; }
-  .cs .card { border: 1px solid rgba(255,255,255,0.09); border-radius: 13px; padding: 24px 22px; background: rgba(255,255,255,0.015); }
-  .cs .card h3 { font-family: 'Sora', sans-serif; font-weight: 600; font-size: 16.5px; color: #fff; margin: 0 0 10px; }
+  .cs .cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 16px; margin-top: 8px; }
+  .cs .card { border: 1px solid rgba(255,255,255,0.09); border-radius: 13px; padding: 22px 20px; background: rgba(255,255,255,0.015); }
+  .cs .card h3 { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: #FF5C5C; margin: 0 0 12px; }
   .cs .card p { font-size: 14.5px; line-height: 1.55; color: #8B96AD; margin: 0; }
+  .cs .flow { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 14px; margin: 24px 0 30px; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+  .cs .flow span.node { border-radius: 7px; padding: 9px 14px; }
+  .cs .checklist { font-family: 'JetBrains Mono', monospace; font-size: 14.5px; line-height: 2; color: #AEB8CC; }
   .foot-link { transition: color .2s; }
   .foot-link:hover { color: #27FDFC; }
 </style>
@@ -143,62 +94,56 @@
   <header style="position:sticky;top:0;z-index:100;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);background:rgba(5,7,14,0.55);border-bottom:1px solid rgba(255,255,255,0.07)">
     <div style="max-width:1280px;margin:0 auto;padding:15px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
       <a href="../../" aria-label="DPLYD AI home" style="display:flex;align-items:center;flex-shrink:0"><img src="../../assets/dplyd-logo-nav.png" alt="DPLYD AI" width="76" height="28" style="height:28px;width:76px;display:block"></a>
-      <div style="display:flex;align-items:center;gap:24px">
-        <a href="../" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:0.08em;color:#AEB8CC">← All case studies</a>
-        <a href="../../#book" style="font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;letter-spacing:0.06em;color:#05070E;background:#27FDFC;padding:11px 20px;border-radius:8px">Book a Demo</a>
-      </div>
+      <a href="../../#book" style="font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;letter-spacing:0.06em;color:#05070E;background:#27FDFC;padding:11px 20px;border-radius:8px">Book a Demo</a>
     </div>
   </header>
 
-  <!-- hero -->
   <main class="cs">
-    <nav aria-label="Breadcrumb" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B;margin-bottom:20px">
-      <a href="../../" style="color:#77839B">Home</a> / <a href="../" style="color:#77839B">Case Studies</a> / <span style="color:#AEB8CC">{{BREADCRUMB_LABEL}}</span>
+    <nav aria-label="Breadcrumb" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B;margin-bottom:24px">
+      <a href="../../" style="color:#77839B">Home</a> / Learn / <span style="color:#AEB8CC">The Index Is the Leak</span>
     </nav>
-    <div class="eyebrow" style="color:#27FDFC">Case Study &middot; {{VERTICAL_LABEL}}</div>
-    <h1>{{TITLE}}</h1>
-    <p class="deck">{{DECK}}</p>
-    <p class="redaction">{{REDACTION_NOTE}}</p>
-    <div class="factstrip">
-      <span class="chip"><b>INDUSTRY</b>{{INDUSTRY}}</span>
-      <span class="chip"><b>CHALLENGE</b>{{CHALLENGE}}</span>
+    <div class="eyebrow" style="color:#FF5C5C">Learn</div>
+    <h1>The index is the leak.</h1>
+    <p class="deck">Most "on-prem-friendly" AI products keep your file on your server — and ship an index of it to their cloud. This page explains why that index is, for privacy purposes, a second copy of the document.</p>
+
+    <!-- flow -->
+    <div class="flow">
+      <span class="node" style="color:#27FDFC;border:1px solid rgba(39,253,252,0.35)">local&nbsp;document</span>
+      <span style="color:#77839B">→</span>
+      <span class="node" style="color:#AEB8CC;border:1px solid rgba(255,255,255,0.14)">content&nbsp;extraction</span>
+      <span style="color:#FF5C5C">→</span>
+      <span class="node" style="color:#FF5C5C;border:1px solid rgba(255,92,92,0.45);background:rgba(255,92,92,0.06)">cloud&nbsp;index&nbsp;·&nbsp;outside&nbsp;your&nbsp;boundary</span>
     </div>
 
-    <!-- 01 / The Problem -->
+    <div class="cards">
+      <div class="card"><h3>KEYWORDS</h3><p>Topics, names, projects, clients, and legal matters — right there in plaintext.</p></div>
+      <div class="card"><h3>CHUNKS</h3><p>Verbatim passages copied straight out of the file. Not derived — the content itself.</p></div>
+      <div class="card"><h3>EMBEDDINGS</h3><p>Encode the meaning — and are reversible enough to <span style="color:#C7D0E2">reconstruct the source text</span>.</p></div>
+      <div class="card"><h3>METADATA</h3><p>Filenames, authors, dates, case IDs, and paths — a map of what you hold.</p></div>
+      <div class="card"><h3>RELATIONSHIPS</h3><p>Which people, entities, and documents connect — disclosure without a single sentence.</p></div>
+    </div>
+
+    <div class="pullquote">
+      <span class="glyph">◆</span>
+      <p>A cloud index of local content is <span style="color:#27FDFC">exfiltration</span> the moment it holds enough derived information to disclose, infer, search, or reconstruct protected content outside your walls. DPLYD keeps the index on the same side of the boundary as the data.</p>
+    </div>
+
+    <!-- The embeddings are reversible -->
     <section>
-      <div class="eyebrow" style="color:#FF5C5C">01 / The Problem</div>
-      <h2>The Problem</h2>
-      {{PROBLEM_BODY}}
+      <h2>The embeddings are reversible</h2>
+      <p>This isn't theoretical. Research on embedding inversion — e.g. <a href="https://arxiv.org/abs/2310.06816" style="color:#27FDFC">"Text Embeddings Reveal (Almost) As Much As Text"</a> (Morris et al., EMNLP 2023) — reconstructs source text from embedding vectors with high fidelity. If your embeddings sit in a vendor's cloud, treat the text as being there too.</p>
     </section>
 
-    <!-- 02 / The Solution -->
+    <!-- Five questions -->
     <section>
-      <div class="eyebrow" style="color:#27FDFC">02 / The Solution</div>
-      <h2>The Solution</h2>
-      <p>{{SOLUTION_INTRO}}</p>
-      <div class="cards">
-        {{SOLUTION_POINTS}}
-      </div>
-    </section>
-
-    <!-- 03 / The Outcome -->
-    <section>
-      <div class="eyebrow" style="color:#27FDFC">03 / The Outcome</div>
-      <h2>The Outcome</h2>
-      <div class="cards">
-        {{OUTCOME_CARDS}}
-      </div>
-      <div class="pullquote">
-        <span class="glyph">&#9670;</span>
-        <p>{{PULLQUOTE}}</p>
-      </div>
-    </section>
-
-    <!-- 04 / The Pattern -->
-    <section>
-      <div class="eyebrow" style="color:#FFE94A">04 / The Pattern</div>
-      <h2>Why This Matters Broadly</h2>
-      {{WHY_BROADLY}}
+      <h2>Five questions to ask any "compliant" AI vendor</h2>
+      <p class="checklist">
+        ▸ Where is the index stored?<br>
+        ▸ Where are embeddings computed?<br>
+        ▸ Where do chunks live at rest?<br>
+        ▸ What metadata leaves our network?<br>
+        ▸ Can you show us the data-flow diagram?
+      </p>
     </section>
   </main>
 
@@ -208,7 +153,7 @@
       <h2 style="font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(24px,3.6vw,34px);line-height:1.15;letter-spacing:-0.015em;margin:0 0 14px;color:#fff">See it on your own data.</h2>
       <p style="font-size:16px;line-height:1.6;color:#8B96AD;margin:0 0 26px">A 30-minute walkthrough of the appliance, Lighthouse, and Sentinel.</p>
       <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-        <a href="../../#book" style="display:inline-flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;letter-spacing:0.05em;color:#05070E;background:#27FDFC;padding:15px 26px;border-radius:9px">Book a Demo &rarr;</a>
+        <a href="../../#book" style="display:inline-flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;letter-spacing:0.05em;color:#05070E;background:#27FDFC;padding:15px 26px;border-radius:9px">Book a Demo →</a>
         <a href="../../#verticals" style="display:inline-flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:500;letter-spacing:0.05em;color:#EAF0FF;background:transparent;border:1px solid rgba(255,255,255,0.2);padding:15px 26px;border-radius:9px">See all verticals</a>
       </div>
     </div>
@@ -216,7 +161,7 @@
 
   <!-- footer -->
   <footer style="position:relative;z-index:1;border-top:1px solid rgba(255,255,255,0.08);background:#070A12">
-    <div aria-hidden="true" style="overflow:hidden;height:22px;opacity:0.35"><div style="display:flex;width:200%;animation:waveDrift 30s linear infinite;font-family:'JetBrains Mono',monospace;font-size:14px;line-height:22px;color:#27FDFC;white-space:nowrap"><span>&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;</span><span>&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;&asymp;&#8767;</span></div></div>
+    <div aria-hidden="true" style="overflow:hidden;height:22px;opacity:0.35"><div style="display:flex;width:200%;animation:waveDrift 30s linear infinite;font-family:'JetBrains Mono',monospace;font-size:14px;line-height:22px;color:#27FDFC;white-space:nowrap"><span>≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿</span><span>≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿≈∿</span></div></div>
     <div style="max-width:1280px;margin:0 auto;padding:52px 32px 40px">
       <div style="display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:flex-start;margin-bottom:40px">
         <div style="max-width:340px">
@@ -230,10 +175,7 @@
             <a href="../../#verticals" class="foot-link" style="font-size:14px;color:#AEB8CC">Verticals</a>
             <a href="../../#security" class="foot-link" style="font-size:14px;color:#AEB8CC">Security</a>
             <a href="../../#pricing" class="foot-link" style="font-size:14px;color:#AEB8CC">Pricing</a>
-            <a href="../../solutions/legal/" class="foot-link" style="font-size:14px;color:#AEB8CC">Legal AI</a>
-            <a href="../../solutions/healthcare/" class="foot-link" style="font-size:14px;color:#AEB8CC">Healthcare AI</a>
-            <a href="../../solutions/defense/" class="foot-link" style="font-size:14px;color:#AEB8CC">Defense AI</a>
-            <a href="../" class="foot-link" style="font-size:14px;color:#AEB8CC">Case Studies</a>
+            <a href="../../case-studies/" class="foot-link" style="font-size:14px;color:#AEB8CC">Case Studies</a>
           </div>
           <div style="display:flex;flex-direction:column;gap:12px">
             <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#77839B">COMPANY</span>
@@ -253,12 +195,12 @@
         <a href="../../#posture" style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#AEB8CC;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:6px 12px">NIST 800-171</a>
       </div>
       <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B">&copy; 2026 DPLYD AI</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B">© 2026 DPLYD AI</span>
         <div style="display:flex;gap:24px">
-          <a href="../../#security" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B">Security</a>
-          <a href="../../terms/" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B">Terms</a>
-          <a href="../../privacy/" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B">Privacy</a>
-          <a href="mailto:info@dplyd.io" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B">Contact</a>
+          <a href="../../#security" class="foot-link" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B">Security</a>
+          <a href="../../terms/" class="foot-link" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B">Terms</a>
+          <a href="../../privacy/" class="foot-link" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B">Privacy</a>
+          <a href="mailto:info@dplyd.io" class="foot-link" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#77839B">Contact</a>
         </div>
       </div>
     </div>
@@ -266,7 +208,7 @@
 
   <script>
     (function () {
-      var els = Array.prototype.slice.call(document.querySelectorAll('.cs section, .cs .factstrip, .cs h1, .cs .deck'));
+      var els = Array.prototype.slice.call(document.querySelectorAll('.cs section, .cs .cards, .cs h1, .cs .deck, .cs .flow, .cs .pullquote'));
       if (!('IntersectionObserver' in window)) return;
       var io = new IntersectionObserver(function (entries) {
         entries.forEach(function (e) {
