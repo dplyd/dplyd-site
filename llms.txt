@@ -19,6 +19,7 @@
 - [The Index Is the Leak](https://dplyd.io/learn/the-index-is-the-leak/): Explainer on why shipping a search index to the cloud is a privacy leak even when the source file stays local.
 - [Case Studies](https://dplyd.io/case-studies/): Deployment write-ups from regulated environments.
 - [Defense/CMMC 2.0 Case Study](https://dplyd.io/case-studies/defense-cmmc/): AI infrastructure for a defense contractor preparing for CMMC 2.0 compliance, deployed without controlled documents or their derived index leaving the perimeter.
+- [Blog](https://dplyd.io/blog/): Articles on on-prem AI deployment, data sovereignty, the index-as-exfiltration problem, and compliance in regulated verticals. Each substantive post is also listed individually below as it is published.
 - [Terms of Service](https://dplyd.io/terms/)
 - [Privacy Policy](https://dplyd.io/privacy/)
 

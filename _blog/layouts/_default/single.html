@@ -1,0 +1,35 @@
+{{ define "main" }}
+<main class="post">
+  <nav aria-label="Breadcrumb" class="crumb">
+    <a href="/">Home</a> / <a href="/blog/">Blog</a> / <span style="color:#AEB8CC">{{ .Title }}</span>
+  </nav>
+  <div class="eyebrow">{{ with .Params.eyebrow }}{{ . }}{{ else }}Blog{{ end }}</div>
+  <h1>{{ .Title }}</h1>
+  <div class="meta">{{ .Date.Format "January 2, 2006" }}{{ with .Params.author }} &nbsp;·&nbsp; {{ . }}{{ end }} &nbsp;·&nbsp; {{ .ReadingTime }} min read</div>
+  {{ with .Params.summary }}<p class="deck">{{ . }}</p>{{ end }}
+  <hr class="lede-rule">
+  {{ .Content }}
+</main>
+
+{{ partial "cta.html" . }}
+
+{{ $related := first 3 (where (where .Site.RegularPages "Type" "page") "Permalink" "!=" .Permalink) }}
+{{ with $related }}
+<section class="related">
+  <h2>More from the blog</h2>
+  <div class="related-grid">
+    {{ range . }}
+    <a href="{{ .RelPermalink }}" class="postcard">
+      <div class="kick">
+        <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+        {{ with .Params.eyebrow }}<span class="k-eyebrow">{{ . }}</span>{{ end }}
+      </div>
+      <h2>{{ .Title }}</h2>
+      {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+      <span class="more">Read →</span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

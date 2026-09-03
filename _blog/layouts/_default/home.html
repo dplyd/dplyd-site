@@ -1,0 +1,32 @@
+{{ define "main" }}
+<main class="hub">
+  <nav aria-label="Breadcrumb" class="crumb">
+    <a href="/">Home</a> / <span style="color:#AEB8CC">Blog</span>
+  </nav>
+  <div class="eyebrow">Blog</div>
+  <h1>Notes from inside the perimeter.</h1>
+  <p class="deck">On-prem AI, data sovereignty, and what compliance actually requires when the data can't leave the building.</p>
+  {{ with .Content }}<div>{{ . }}</div>{{ end }}
+  <div class="divider" aria-hidden="true">· ~ · ~ · ~ · ~ · ~ · ~ · ~ · ~ · ~ · ~ · ~ · ~ · ~ · ~ · ~ · ~ · ~ · ~ · ~ · ~ ·</div>
+
+  {{ $posts := where .Site.RegularPages "Type" "page" }}
+  {{ if $posts }}
+  <div class="postlist">
+    {{ range $posts.ByDate.Reverse }}
+    <a href="{{ .RelPermalink }}" class="postcard">
+      <div class="kick">
+        <span>{{ .Date.Format "January 2, 2006" }}</span>
+        {{ with .Params.eyebrow }}<span class="k-eyebrow">{{ . }}</span>{{ end }}
+        <span>{{ .ReadingTime }} min read</span>
+      </div>
+      <h2>{{ .Title }}</h2>
+      {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+      <span class="more">Read →</span>
+    </a>
+    {{ end }}
+  </div>
+  {{ else }}
+  <p class="postlist-empty">No posts yet. Check back soon.</p>
+  {{ end }}
+</main>
+{{ end }}

@@ -1,6 +1,10 @@
 .DS_Store
 
-# Internal working docs must never be committed — GitHub Pages serves every
-# file in this repo, so anything here would be live at dplyd.io/<filename>.
-*.md
+# Internal working docs must never be committed. Root-level Markdown is
+# ignored; Hugo blog content under _blog/content/ is the exception and is
+# excluded from the published artifact anyway via the workflow's rsync.
+/*.md
 scratch-*
+_blog/public/
+_blog/resources/
+.hugo_build.lock

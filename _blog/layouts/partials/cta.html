@@ -1,0 +1,13 @@
+{{- $headline := cond (ne (string .Params.cta_headline) "") (string .Params.cta_headline) "Bring the AI to where your data already lives." }}
+{{- $body := cond (ne (string .Params.cta_body) "") (string .Params.cta_body) "DPLYD installs a fully managed AI appliance inside your perimeter. A 30-minute walkthrough with the founder, on your own data." }}
+<div class="cta-wrap">
+  <div class="cta-panel">
+    <div class="cta-eyebrow">▸ See it on your own data</div>
+    <h2>{{ $headline }}</h2>
+    <p>{{ $body }}</p>
+    <div class="cta-row">
+      <a href="/#book" class="btn-primary">Book a Demo <span>→</span></a>
+      <a href="/#contact" class="btn-ghost">Contact Sales</a>
+    </div>
+  </div>
+</div>
