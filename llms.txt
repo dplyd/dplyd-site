@@ -4,7 +4,7 @@
 
 ## Company
 
-- DPLYD AI LLC
+- DPLYD Inc.
 - Site: https://dplyd.io/
 - Positioning: on-prem/sovereign AI infrastructure, as an alternative to sending sensitive documents to cloud AI vendors.
 
@@ -25,7 +25,7 @@
 
 ## Facts
 
-- Company: DPLYD AI LLC. Contact: info@dplyd.io. Demos: https://cal.com/kdplyd/30min
+- Company: DPLYD Inc. Contact: info@dplyd.io. Demos: https://cal.com/kdplyd/30min
 - Category: on-premises AI appliance / sovereign AI / private LLM deployment (managed hardware, not software-only and not hosted SaaS).
 - Pricing model: one fixed monthly fee per appliance covering hardware, models, updates, monitoring, and support. No per-seat licenses, no per-token metering, no capex.
 - Deployment: DPLYD installs and operates the hardware inside the customer's network; it can run fully air-gapped.

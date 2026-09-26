@@ -24,7 +24,7 @@
 <meta name="twitter:description" content="{{ $desc }}">
 <meta name="twitter:image" content="https://dplyd.io/assets/og-card.png">
 {{- if not $isHome }}
-{{- $author := cond (ne (string .Params.author) "") (dict "@type" "Person" "name" (string .Params.author)) (dict "@type" "Organization" "name" "DPLYD AI LLC" "url" "https://dplyd.io/") }}
+{{- $author := cond (ne (string .Params.author) "") (dict "@type" "Person" "name" (string .Params.author)) (dict "@type" "Organization" "name" "DPLYD Inc." "url" "https://dplyd.io/") }}
 {{- $blogPosting := dict
   "@context" "https://schema.org"
   "@type" "BlogPosting"
