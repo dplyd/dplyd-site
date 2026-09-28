@@ -15,9 +15,7 @@ window.DPLYD_CONFIG = {
       title: '$5,000/month, fully leased',
       body: 'Unlimited seats. Hardware, models, maintenance, patching, and support. No CapEx.'
     }
-  },
-  cta: { label: 'Get the compliance packet', href: '#contact', source: 'compliance_packet' },
-  secondaryCta: { label: 'Talk to us', href: '#contact', source: 'contact' }
+  }
 };
 (function () {
   var c = window.DPLYD_CONFIG;
@@ -26,14 +24,6 @@ window.DPLYD_CONFIG = {
     Array.prototype.forEach.call(document.querySelectorAll('[data-cfg]'), function (el) {
       var v = get(el.getAttribute('data-cfg'));
       if (typeof v === 'string') el.textContent = v;
-    });
-    Array.prototype.forEach.call(document.querySelectorAll('[data-cta]'), function (el) {
-      var k = el.getAttribute('data-cta'), cta = c[k];
-      if (!cta) return;
-      el.setAttribute('href', cta.href);
-      el.setAttribute('data-source', cta.source);
-      var lbl = el.querySelector('[data-cta-label]');
-      if (lbl) lbl.textContent = cta.label;
     });
   });
 })();
