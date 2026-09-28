@@ -20,6 +20,7 @@
 - [Case Studies](https://dplyd.io/case-studies/): Deployment write-ups from regulated environments.
 - [Defense/CMMC 2.0 Case Study](https://dplyd.io/case-studies/defense-cmmc/): AI infrastructure for a defense contractor preparing for CMMC 2.0 compliance, deployed without controlled documents or their derived index leaving the perimeter.
 - [Blog](https://dplyd.io/blog/): Articles on on-prem AI deployment, data sovereignty, the index-as-exfiltration problem, and compliance in regulated verticals. Each substantive post is also listed individually below as it is published.
+- [Why the Index Is the Leak (blog)](https://dplyd.io/blog/why-the-index-is-the-leak/): How AI search copies sensitive data off-site — what an AI index contains, what research shows embeddings can reveal, and five questions to ask any vendor.
 - [Terms of Service](https://dplyd.io/terms/)
 - [Privacy Policy](https://dplyd.io/privacy/)
 
