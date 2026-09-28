@@ -1,4 +1,4 @@
-// Single source of truth for prices and primary CTA. Elements marked
+// Single source of truth for prices. Elements marked
 // data-cfg="<key>" are filled from here; meta/OG/JSON-LD must be kept in sync by hand
 // (crawlers do not run this script).
 window.DPLYD_CONFIG = {
