@@ -34,7 +34,7 @@
       "legalName": "DPLYD Inc.",
       "url": "https://dplyd.io/",
       "logo": "https://dplyd.io/assets/dplyd-logo.png",
-      "description": "DPLYD builds fully managed on-premises AI for regulated organizations. The model, the retrieval index, and the data all stay inside the customer's network. Starts at $500/month including 1 seat, then $25/seat/month on customer-owned hardware; $5,000/month fully leased with unlimited seats. No per-token fees.",
+      "description": "DPLYD builds fully managed on-premises AI for regulated organizations. The model, the retrieval index, and the data all stay inside the customer's network. Starts at $500/month including 1 seat, then $25/seat/month on customer-owned hardware; $5,000/month fully leased with as many seats as the hardware supports. No per-token fees.",
       "email": "info@dplyd.io",
       "contactPoint": { "@type": "ContactPoint", "email": "info@dplyd.io", "contactType": "sales" }
     },
@@ -47,7 +47,7 @@
       "offers": {
         "@type": "Offer",
         "availability": "https://schema.org/InStock",
-        "description": "Starts at $500/month including 1 seat, then $25 per additional seat per month, for software, models, and management on customer-owned hardware. $5,000/month fully leased with unlimited seats: hardware, models, maintenance, patching, and support, no CapEx. No per-token fees."
+        "description": "Starts at $500/month including 1 seat, then $25 per additional seat per month, for software, models, and management on customer-owned hardware. $5,000/month fully leased with as many seats as the hardware supports: hardware, models, maintenance, patching, and support, no CapEx. No per-token fees."
       }
     },
     {
@@ -286,15 +286,15 @@
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px;margin-bottom:18px">
       <div data-reveal class="card-hover" style="position:relative;border:1px solid rgba(255,255,255,0.09);border-radius:14px;padding:30px 26px;background:rgba(255,255,255,0.015)">
         <h3 data-cfg="prices.entry.title" style="font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(22px,3vw,28px);color:#fff;margin:0 0 12px">Starts at $500/month</h3>
-        <p data-cfg="prices.entry.body" style="font-size:15px;line-height:1.6;color:#8B96AD;margin:0">Includes 1 seat, then $25 per additional seat per month. Software, models, and management on compatible hardware you buy and own.</p>
+        <p data-cfg="prices.entry.body" style="font-size:15px;line-height:1.6;color:#8B96AD;margin:0">Includes 1 seat, then $25 per additional seat per month. Software, models, and management on hardware you buy and own.</p>
       </div>
       <div data-reveal class="card-hover" style="position:relative;border:1px solid rgba(255,255,255,0.09);border-radius:14px;padding:30px 26px;background:rgba(255,255,255,0.015)">
         <h3 data-cfg="prices.full.title" style="font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(22px,3vw,28px);color:#fff;margin:0 0 12px">$5,000/month, fully leased</h3>
-        <p data-cfg="prices.full.body" style="font-size:15px;line-height:1.6;color:#8B96AD;margin:0">Unlimited seats. Hardware, models, maintenance, patching, and support. No CapEx.</p>
+        <p data-cfg="prices.full.body" style="font-size:15px;line-height:1.6;color:#8B96AD;margin:0">As many seats as the hardware supports. Hardware, models, maintenance, patching, and support. No CapEx.</p>
       </div>
     </div>
     <p data-reveal style="font-size:15px;line-height:1.6;color:#AEB8CC;margin:0 0 10px">No per-token metering, ever. No surprise overages.</p>
-    <p data-reveal style="font-size:15px;line-height:1.6;color:#AEB8CC;margin:0 0 34px">Example: a 10-person team on your own hardware is $725/month. Leased is $5,000/month, all-in, with unlimited seats.</p>
+    <p data-reveal style="font-size:15px;line-height:1.6;color:#AEB8CC;margin:0 0 34px">Example: a 10-person team on your own hardware is $725/month. Leased is $5,000/month, all-in, with as many seats as the hardware supports.</p>
     <div data-reveal class="table-wrap" style="border:1px solid rgba(255,255,255,0.09);border-radius:14px;margin-bottom:28px">
       <table class="cmp-table" style="width:100%;min-width:520px">
         <thead><tr><th></th><th>CLOUD AI</th><th>DPLYD</th></tr></thead>
@@ -302,7 +302,7 @@
           <tr><td class="cmp-row-label">billing unit</td><td class="cmp-cloud">per seat × per token × egress</td><td class="cmp-dplyd">per seat on your hardware, or one flat fee leased. Never per token</td></tr>
           <tr><td class="cmp-row-label">budget shape</td><td class="cmp-cloud">grows with usage, unpredictable</td><td class="cmp-dplyd">predictable — seats and price are known up front, no usage-based surprises</td></tr>
           <tr><td class="cmp-row-label">capex</td><td class="cmp-cloud">none, but perpetual metering</td><td class="cmp-dplyd">none if leased; you buy the hardware on the $500 tier</td></tr>
-          <tr><td class="cmp-row-label">who can use it</td><td class="cmp-cloud">licensed seats only</td><td class="cmp-dplyd">leased: unlimited seats. Own hardware: $25/seat</td></tr>
+          <tr><td class="cmp-row-label">who can use it</td><td class="cmp-cloud">licensed seats only</td><td class="cmp-dplyd">leased: as many seats as the hardware supports. Own hardware: $25/seat</td></tr>
         </tbody>
       </table>
     </div>
@@ -455,14 +455,14 @@
     </div>
     <div data-reveal style="border:1px solid rgba(255,255,255,0.09);border-radius:13px;padding:22px 24px;background:rgba(255,255,255,0.015)">
       <h3 style="font-family:'JetBrains Mono',monospace;font-size:14px;letter-spacing:0.04em;color:#EAF0FF;margin:0 0 10px"><span style="color:#27FDFC">Q ▸</span> What does it cost?</h3>
-      <p style="font-size:14.5px;line-height:1.65;color:#8B96AD;margin:0">Two options. On hardware you own: $500/month including 1 seat, then $25 per additional seat per month. Fully leased: $5,000/month flat with unlimited seats, including hardware, maintenance, patching, and support. There is no per-token metering on either.</p>
+      <p style="font-size:14.5px;line-height:1.65;color:#8B96AD;margin:0">Two options. On hardware you own: $500/month including 1 seat, then $25 per additional seat per month. Fully leased: $5,000/month flat with as many seats as the hardware supports, including hardware, maintenance, patching, and support. There is no per-token metering on either.</p>
     </div>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
       {"@type":"Question","name":"Does any data leave my network?","acceptedAnswer":{"@type":"Answer","text":"No. The model, the retrieval index, the embeddings, and the logs all live on-premises, inside your perimeter. Nothing derived from your documents is transmitted to a third-party API."}},
       {"@type":"Question","name":"What is sovereign AI?","acceptedAnswer":{"@type":"Answer","text":"Generative AI that runs locally on hardware inside your premises, managed by us. You get the productivity of modern AI; your data never crosses your network boundary."}},
       {"@type":"Question","name":"How is this different from a private cloud or GovCloud AI service?","acceptedAnswer":{"@type":"Answer","text":"GovCloud and \"private cloud\" AI is still someone else's computer — your content and its search index are processed and stored outside your walls, under someone else's controls. DPLYD moves the computer to you instead."}},
-      {"@type":"Question","name":"What does it cost?","acceptedAnswer":{"@type":"Answer","text":"Two options. On hardware you own: $500/month including 1 seat, then $25 per additional seat per month. Fully leased: $5,000/month flat with unlimited seats, including hardware, maintenance, patching, and support. There is no per-token metering on either."}}
+      {"@type":"Question","name":"What does it cost?","acceptedAnswer":{"@type":"Answer","text":"Two options. On hardware you own: $500/month including 1 seat, then $25 per additional seat per month. Fully leased: $5,000/month flat with as many seats as the hardware supports, including hardware, maintenance, patching, and support. There is no per-token metering on either."}}
     ]}
     </script>
   </section>

@@ -8,12 +8,12 @@ window.DPLYD_CONFIG = {
       perSeat: '$25/seat/month',
       includedSeats: 1,
       title: 'Starts at $500/month',
-      body: 'Includes 1 seat, then $25 per additional seat per month. Software, models, and management on compatible hardware you buy and own.'
+      body: 'Includes 1 seat, then $25 per additional seat per month. Software, models, and management on hardware you buy and own.'
     },
     full: {
       amount: '$5,000/month',
       title: '$5,000/month, fully leased',
-      body: 'Unlimited seats. Hardware, models, maintenance, patching, and support. No CapEx.'
+      body: 'As many seats as the hardware supports. Hardware, models, maintenance, patching, and support. No CapEx.'
     }
   }
 };

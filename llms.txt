@@ -1,6 +1,6 @@
 # DPLYD
 
-> DPLYD is fully managed private AI deployed inside a customer's own perimeter. Privileged, PHI, FERPA, and classified data never leaves the building — the model, the retrieval index, and the data all stay on-prem. Starts at $500/month including 1 seat, then $25 per additional seat per month, on customer-owned hardware; $5,000/month fully leased with unlimited seats. No per-token fees. Built for regulated verticals (legal, healthcare, defense/CMMC).
+> DPLYD is fully managed private AI deployed inside a customer's own perimeter. Privileged, PHI, FERPA, and classified data never leaves the building — the model, the retrieval index, and the data all stay on-prem. Starts at $500/month including 1 seat, then $25 per additional seat per month, on customer-owned hardware; $5,000/month fully leased with as many seats as the hardware supports. No per-token fees. Built for regulated verticals (legal, healthcare, defense/CMMC).
 
 ## Company
 
@@ -27,8 +27,8 @@
 
 - Company: DPLYD Inc. Contact: info@dplyd.io. Demos: https://cal.com/kdplyd/30min
 - Category: on-premises AI / sovereign AI / private LLM deployment (managed hardware, not software-only and not hosted SaaS).
-- Pricing: two options. Own hardware: $500/month including 1 seat, then $25 per additional seat per month (software, models, and management; the customer buys and owns the hardware). Fully leased: $5,000/month, unlimited seats, including hardware, maintenance, patching, and support, no CapEx. No per-token metering on either.
-- Deployment: on the leased tier DPLYD installs and operates the hardware inside the customer's network; on the own-hardware tier the customer supplies compatible hardware and DPLYD manages the software. Fully air-gapped deployment is available on request.
+- Pricing: two options. Own hardware: $500/month including 1 seat, then $25 per additional seat per month (software, models, and management; the customer buys and owns the hardware). Fully leased: $5,000/month, as many seats as the hardware supports, including hardware, maintenance, patching, and support, no CapEx. No per-token metering on either.
+- Deployment: on the leased tier DPLYD installs and operates the hardware inside the customer's network; on the own-hardware tier the customer supplies the hardware and DPLYD manages the software. Fully air-gapped deployment is available on request.
 - Verticals: legal (privilege), healthcare (HIPAA/PHI), defense (CMMC 2.0 / CUI), education (FERPA).
 - Two ways to buy: direct (a regulated organization deploys DPLYD for its own staff) or via the Carrier partner program (an AI software vendor ships its own product on a DPLYD-managed appliance at its customer's site, keeping the customer relationship).
 
