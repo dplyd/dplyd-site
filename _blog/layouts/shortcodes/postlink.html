@@ -1,0 +1,2 @@
+{{- /* {{< postlink "slug" "link text" >}} renders a link only once that post is published; until then it renders the text alone. */ -}}
+{{- $slug := .Get 0 -}}{{- $text := .Get 1 -}}{{- with site.GetPage (printf "/%s" $slug) -}}<a href="{{ .RelPermalink }}">{{ $text }}</a>{{- else -}}{{ $text }}{{- end -}}
