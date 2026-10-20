@@ -22,6 +22,7 @@
 - [Blog](https://dplyd.io/blog/): Articles on on-prem AI deployment, data sovereignty, the index-as-exfiltration problem, and compliance in regulated verticals. Each substantive post is also listed individually below as it is published.
 - [Why the Index Is the Leak (blog)](https://dplyd.io/blog/why-the-index-is-the-leak/): How AI search copies sensitive data off-site — what an AI index contains, what research shows embeddings can reveal, and five questions to ask any vendor.
 - [CMMC Phase 2 Paused: What It Means for CUI and AI Tools (blog)](https://dplyd.io/blog/cmmc-phase-2-paused-ai-tools/): DoD suspended CMMC Phase 2 in July 2026, but DFARS 7012 and NIST 800-171 obligations remain, and AI tools that touch CUI expand your assessment scope.
+- [After Heppner: A Law Firm AI Policy That Protects Privilege (blog)](https://dplyd.io/blog/heppner-ai-privilege-law-firm-policy/): What United States v. Heppner does and doesn't hold about consumer AI chats and privilege, and what a law firm's AI policy should say.
 - [Terms of Service](https://dplyd.io/terms/)
 - [Privacy Policy](https://dplyd.io/privacy/)
 
