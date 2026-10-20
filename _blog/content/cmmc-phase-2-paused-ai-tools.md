@@ -8,7 +8,7 @@ summary: "DoD suspended CMMC Phase 2 in July 2026. Your DFARS 7012 and NIST 800-
 draft: false
 ---
 
-*The November 10 deadline is gone. DFARS 7012 is still there.*
+*The November 10 deadline is off the table, but DFARS 7012 still applies.*
 
 **In short**
 - On July 13, 2026, the Department suspended CMMC Phase 2, which was due November 10, 2026.
@@ -25,13 +25,13 @@ On September 3, Class Deviation 2026-O0025 Rev. 3 directed contracting officers 
 
 ### What did not change
 
-The certification gate moved — the obligations stayed put. Phase 1 self-assessments and SPRS affirmations continue. DFARS 252.204-7012 still requires adequate security and incident reporting. NIST SP 800-171 Rev 2, with its 110 requirements, is still the yardstick. False Claims Act exposure for inaccurate affirmations is still there too. With no assessor involved, the affirmation is your own statement to the government, and if the controls aren't real, the paperwork becomes the liability.
+Only the certification gate moved. Phase 1 self-assessments and SPRS affirmations continue. DFARS 252.204-7012 still requires adequate security and incident reporting, and NIST SP 800-171 Rev 2, with its 110 requirements, is still the yardstick. So is False Claims Act exposure for inaccurate affirmations. With no assessor involved, the affirmation is your own statement to the government, and if the controls aren't real, the paperwork becomes the liability.
 
 ### The precedent
 
-The 2021 pause ended in a streamlined CMMC 2.0, not a repeal. Programs like this get reshaped. I'd argue a contractor who spends the pause fixing architecture is ahead in every plausible outcome. Estimates of how many companies need Level 2 differ widely, roughly 80,000 by the Department's figures and 118,000 by a figure CyberSheath cites, but nobody disputes the direction.
+The 2021 pause ended in a streamlined CMMC 2.0, and the program was reshaped rather than repealed. I'd argue a contractor who spends this pause fixing architecture is ahead in every plausible outcome. Estimates of how many companies need Level 2 differ widely, roughly 80,000 by the Department's figures and 118,000 by a figure CyberSheath cites, but nobody disputes the direction.
 
-### Where AI quietly expands your scope
+### Where AI expands your scope
 
 Every AI tool that processes, stores or indexes CUI joins the system you have to assess: the model, the interface, the logs and, as we cover in {{< postlink "why-the-index-is-the-leak" "Why the Index Is the Leak" >}}, the search index. If those live in a vendor's cloud, your boundary now includes that environment. Adding AI after you've documented your boundary means revisiting your system security plan, diagrams and data flows. Unsanctioned use, like a browser tab to a consumer chatbot, is a data flow no diagram shows ({{< postlink "shadow-ai-regulated-firms" "Shadow AI" >}}). The cleanest fix is AI inside the boundary you already defend.
 
@@ -50,7 +50,7 @@ DPLYD is built to the standard of NIST SP 800-171 controls. The model, index, em
 
 ### Using the pause well
 
-Treat the pause as a planning window, and sequence the work. In the first 30 days, settle the boundary and inventory your AI tools. In days 30 to 60, close the gaps you find: multi-factor authentication, logging, segmentation and a written AI policy. In days 60 to 90, test your evidence by asking someone outside the project to produce it for a random week. Contractors who do this will be able to answer a prime's or customer's questions in hours when requirements return. Those who wait will do the same work under a deadline, with less say in how — and probably at a higher price.
+Sequence the work. In the first 30 days, settle the boundary and inventory your AI tools. In days 30 to 60, close the gaps you find: multi-factor authentication, logging, segmentation and a written AI policy. In days 60 to 90, test your evidence by asking someone outside the project to produce it for a random week. Contractors who do this can answer a prime's or customer's questions in hours when requirements return. Those who wait will do the same work under a deadline, with less say in how it's done and probably at a higher price.
 
 ### Frequently asked questions
 
