@@ -1,6 +1,6 @@
 # DPLYD
 
-> DPLYD is fully managed private AI deployed inside a customer's own perimeter. Privileged, PHI, FERPA, and classified data never leaves the building — the model, the retrieval index, and the data all stay on-prem. Starts at $500/month including 1 seat, then $25 per additional seat per month, on customer-owned hardware; $5,000/month fully leased with as many seats as the hardware supports. No per-token fees. Built for regulated verticals (legal, healthcare, defense/CMMC).
+> DPLYD is fully managed private AI deployed inside a customer's own perimeter. Privileged, PHI, FERPA, and classified data never leaves the building — the model, the retrieval index, and the data all stay on-prem. Starts at $500/month including 1 seat, then $25 per additional seat per month, on customer-owned hardware; $5,000/month fully leased with as many seats as the hardware supports. No per-token fees. Built for regulated verticals (legal, healthcare, defense/CMMC). Includes agent teams that work with local business context, and a Knowledge Control Plane that controls which knowledge goes where and who can access what.
 
 ## Company
 
