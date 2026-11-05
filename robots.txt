@@ -1,5 +1,2 @@
 User-agent: *
 Allow: /
-Disallow: /_templates/
-
-Sitemap: https://dplyd.io/sitemap.xml
